@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C2638DD-2CC5-4017-868B-BBCE1DD96EB2}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CommunicationCallingXamarinSampleApp.Droid</RootNamespace>
+    <AssemblyName>CommunicationCallingXamarinSampleApp.Android</AssemblyName>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+<AndroidSupportedAbis>armeabi-v7a;arm64-v8a;x86;x86_64</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>2.1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Solver">
+      <Version>2.0.4.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.5.31.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
+      <Version>1.5.31.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Extensions">
+      <Version>2.2.0.10</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx">
+      <Version>1.6.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Ktx">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core.Ktx">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Fragment.Ktx">
+      <Version>1.3.6.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Collection.Ktx">
+      <Version>1.1.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Ktx">
+      <Version>2.3.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.DataBinding.ViewBinding">
+      <Version>7.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.JakeWharton.ThreeTenAbp">
+      <Version>1.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Slf4jApi">
+      <Version>1.7.30</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Activity.Ktx">
+      <Version>1.3.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView">
+      <Version>1.2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Composite.cs" />
+    <Compile Include="RemoteParticipantJoinedHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="aar\azure-communication-calling-2.2.0.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\cat.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\fox.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\koala.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\monkey.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\mouse.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\octopus.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommunicationCallingXamarinSampleApp\CommunicationCallingXamarinSampleApp.csproj">
+      <Project>{0BA4715C-974F-459C-8366-81A726E4A57E}</Project>
+      <Name>CommunicationCallingXamarinSampleApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XamarinAndroidBindings\CommunicationCommon\CommunicationCommon\CommunicationCommon.csproj">
+      <Name>CommunicationCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XamarinAndroidBindings\CommunicationCore\CommunicationCore\CommunicationCore.csproj">
+      <Name>CommunicationCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XamarinAndroidBindings\CommunicationUILibrary\CommunicationUILibrary\CommunicationUILibrary.csproj">
+      <Name>CommunicationUILibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAarLibrary Include="aar\azure-core-logging-1.0.0-beta.9.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\fluentui_drawer-0.0.20.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\fluentui_listitem-0.0.20.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\fluentui_core-0.0.20.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\fluentui_others-0.0.20.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\fluentui_transients-0.0.20.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\fluentui_persona-0.0.20.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    <AndroidAarLibrary Include="aar\azure-communication-calling-2.2.0.aar">
+      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+    </AndroidAarLibrary>
+    
+  </ItemGroup>
+ <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
