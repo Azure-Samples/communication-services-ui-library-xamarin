@@ -1,0 +1,387 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_112 (Oracle Corporation)
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_people_24_
+ regular.xml
+SHA-256-Digest: KNUU26xYYX95SPRvKJQhxUZ5jt8n7Y1C6/ch1jRNrHI=
+
+Name: res/drawable/azure_communication_ui_calling_toggle_selector_mic_
+ for_setup.xml
+SHA-256-Digest: A+2bl5ZyByb3zbeNh40f+yx0VRuHZwWgx2LsmJE/c+4=
+
+Name: res/layout-sw600dp-v13/azure_communication_ui_calling_call_local
+ _pip_video.xml
+SHA-256-Digest: oMsTy/I+an1tuOWKnvsziPBU9XYMwyCsiof9iS5OIk4=
+
+Name: res/values-tr-rTR/values-tr-rTR.xml
+SHA-256-Digest: RWIhLESjo4aV0zKFS9Rww4AG2J9NUe9cOVlrQLTAt6k=
+
+Name: res/values-de-rDE/values-de-rDE.xml
+SHA-256-Digest: zCdj/xYBQWwkrIuuaS+C44NqmfwH2r2Tu/Ml5ridG9g=
+
+Name: res/drawable/azure_communication_ui_calling_cancel_leave_call_bu
+ tton.xml
+SHA-256-Digest: ScleVaD2Y4m2p+9XShbjFqr7I9DxC55k2TyFnSwMkds=
+
+Name: res/drawable/azure_communication_ui_calling_corner_bottom_left_t
+ op_right_radius_rectangle_4dp.xml
+SHA-256-Digest: qsy8Q0LIEFWoxo6MGH08koF4E4H9em4dy3QCtNMXbcg=
+
+Name: res/layout-sw600dp-v13/azure_communication_ui_calling_fragment_s
+ etup.xml
+SHA-256-Digest: oms9ixKcYVIzFDyPbsfZHgbW//4m0MkE+6j2lg3JTWo=
+
+Name: res/layout/azure_communication_ui_calling_call_fragment.xml
+SHA-256-Digest: DRL7BViPHGzMYP9xcuACOhXemXU8xX3b6y6DpNSmBhk=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_off_24
+ _filled_composite_button_filled_grey.xml
+SHA-256-Digest: f1kqEhpYGbP4mvlau5x9aX8iIt95gd3zO66x7qNb/g0=
+
+Name: res/color/azure_communication_ui_calling_primary_selector.xml
+SHA-256-Digest: NYIKLR001Zn5ccvO5fgqh51j4kwI/gGjkK4UjHF9v2k=
+
+Name: res/values-fr-rFR/values-fr-rFR.xml
+SHA-256-Digest: OYqLdlzIrlHOrQ5VdV6zW0o5nWz61HLib06H612cKuk=
+
+Name: res/values-tr/values-tr.xml
+SHA-256-Digest: RWIhLESjo4aV0zKFS9Rww4AG2J9NUe9cOVlrQLTAt6k=
+
+Name: res/layout/azure_communication_ui_calling_participant_avatar_vie
+ w.xml
+SHA-256-Digest: F0eSf3ukZkh60CMqAruf87cyiDSeCCN1e+U2jnfR4Hk=
+
+Name: res/values-fr/values-fr.xml
+SHA-256-Digest: OYqLdlzIrlHOrQ5VdV6zW0o5nWz61HLib06H612cKuk=
+
+Name: public.txt
+SHA-256-Digest: h8YjhdCZKfCB3XK6VBmL9ryRaW6rwT/Bxn/Ohiq2zhU=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_speaker_bl
+ uetooth_24_regular.xml
+SHA-256-Digest: IoKlkBwRKVh2dLsJSAgsmGTTGO6sVOy79l5P3APNX2s=
+
+Name: res/values-pt-rBR/values-pt-rBR.xml
+SHA-256-Digest: I47os2sRaYqirO+LjkatX+AmXxiOtfI1+jFfEHH3jdI=
+
+Name: res/layout-sw600dp-v13/azure_communication_ui_calling_call_heade
+ r.xml
+SHA-256-Digest: /IqAPx3TiyQwrdcAB59TGxc+AJVzxqvJvoy0Ycqifyo=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_off_24
+ _filled_composite_button_enabled.xml
+SHA-256-Digest: s2MLmfGMmiGMUdxVT5ypXos1SJSy1ndBzW3/6YH9Kc0=
+
+Name: res/layout/azure_communication_ui_calling_control_bar_view_table
+ t.xml
+SHA-256-Digest: JEy0GXkU685mqUzPc9NXVqfhsJRcIOlZu+QPY4cCvK0=
+
+Name: res/values-nl-rNL/values-nl-rNL.xml
+SHA-256-Digest: mNlxSai0csK4xobwU3keVK6FGdPynby+4o2ZIpMzk14=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_dismiss_12
+ _regular.xml
+SHA-256-Digest: ETMtjDhMZe6FE47kMG1nFULKxhwmP8CDyaQIUW1DE1o=
+
+Name: res/layout/azure_communication_ui_calling_bottom_drawer_title_ce
+ ll.xml
+SHA-256-Digest: oaNZuKpxfoFzkkij9yv1imyQHcV16x9yyH1Ry7wK9RQ=
+
+Name: res/values-zh/values-zh.xml
+SHA-256-Digest: ThUGD880dF4T8GvllwFJyra20NZKlx4jc7hoiWiqW3s=
+
+Name: res/values-ja-rJP/values-ja-rJP.xml
+SHA-256-Digest: LMCUL99JpEGnRXWsLVXSLFOS1eZKCAO/9+NbFlFZ5Y0=
+
+Name: res/values-pt/values-pt.xml
+SHA-256-Digest: I47os2sRaYqirO+LjkatX+AmXxiOtfI1+jFfEHH3jdI=
+
+Name: META-INF/com/android/build/gradle/aar-metadata.properties
+SHA-256-Digest: pRg6ws3c5Xl15mECuaA8oBqiNFswQCICj7LoaguZVJ4=
+
+Name: res/drawable/azure_communication_ui_calling_toggle_selector_came
+ ra_for_setup.xml
+SHA-256-Digest: ivQzMZYyoNHPyYLKMKrePmeH9RnLjvo4sFPSyv73J/o=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_clock_24_f
+ illed.xml
+SHA-256-Digest: xPXltUtleVDpiAQIlnT95+AVTs4X4D//QO4ZZk5F8RA=
+
+Name: res/layout-sw600dp-land-v13/azure_communication_ui_calling_call_
+ local_pip_video.xml
+SHA-256-Digest: Ds8bVfqnFz3RC0hkNY1dh7DE97zPQ8QCYvjdmPUW5n4=
+
+Name: res/layout/azure_communication_ui_calling_activity_call_composit
+ e.xml
+SHA-256-Digest: lBJYrVQiYshq3zPE196JnoSU9Y1Rveh1O3KAKJ9qOi0=
+
+Name: res/layout/azure_communication_ui_calling_call_hold_overlay.xml
+SHA-256-Digest: Oog/wEa5QsFnv/OxNLHh30ABaae13u+5Bev6s7HBXtw=
+
+Name: res/layout/azure_communication_ui_calling_switch_camera_button.x
+ ml
+SHA-256-Digest: 71gREDrDPhp9qZLUUUHodXCe4u5xyVHvhQsSfDiPmnU=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: a3E1SMbL0CF9JzAJ3/RRymBRhJhHviq6huc4IUUhbJI=
+
+Name: res/values-en-rGB/values-en-rGB.xml
+SHA-256-Digest: gZeV9EAhfGeWSGRicfPzLjjKEsokuH1Q+/gTib/xRUg=
+
+Name: res/layout-sw600dp-land-v13/azure_communication_ui_calling_call_
+ fragment.xml
+SHA-256-Digest: EcrCNEmotpQMQanPYCJIJozGSyefDRaUlgLZrqhRgjQ=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_on_24_
+ filled_composite_button_filled.xml
+SHA-256-Digest: 6T8ESlu//esfKU3ymeNhflRehj48z81Pif6KnBW+nqg=
+
+Name: R.txt
+SHA-256-Digest: 2O/h57FBGJH6nLVaU22KHOlBdiIepohRXcTZG/xxMGw=
+
+Name: res/values-night-v8/values-night-v8.xml
+SHA-256-Digest: 42IkThEHMpIHRH4mX6AVHNw74XvIKtcCttjwIBaUXQk=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_video_off_
+ 24_filled_composite_button_filled.xml
+SHA-256-Digest: gdDuErCnl2s315TDLlbCYN5CKc3UaTi+2sTIuBLCBzo=
+
+Name: res/drawable/azure_communication_ui_calling_leave_confirm_teleph
+ one_21_10.xml
+SHA-256-Digest: 9Z8jAP3QJHXJwRnpLwL0/gZf5IM9zc0aRrMCl6V1ON0=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_on_24_
+ filled_composite_button_enabled.xml
+SHA-256-Digest: tTw32xC3LRJj3vKnB7rw756kxc6/5FEuBYSO1/+GDOg=
+
+Name: res/values-sw600dp-v13/values-sw600dp-v13.xml
+SHA-256-Digest: KLgQDeKnlS3pYiITKVcPBJtIo6VJtMEI9lKtq1KtbGw=
+
+Name: res/values-ru-rRU/values-ru-rRU.xml
+SHA-256-Digest: +tiWQJd/cQcMgpccmTFTCrGq38QMuF5EaSqnNy07OLc=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_video_24_f
+ illed_composite_button_enabled.xml
+SHA-256-Digest: JGc98t7zoyGcpUVWUZVkbCgN+43360DzAuDvgYxVj/Q=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_video_off_
+ 24_filled_composite_button_enabled.xml
+SHA-256-Digest: PSbJHMSNw7WG+r/ZCGCGeJkr/37ZdrQKlf3aDrACNP4=
+
+Name: res/values-de/values-de.xml
+SHA-256-Digest: zCdj/xYBQWwkrIuuaS+C44NqmfwH2r2Tu/Ml5ridG9g=
+
+Name: res/values-es/values-es.xml
+SHA-256-Digest: S6Zki/2FJFV6FoHodeab4cPGEuuyyReGyFB1w+HJV0s=
+
+Name: res/layout-land/azure_communication_ui_calling_call_local_pip_vi
+ deo.xml
+SHA-256-Digest: 9ngj9YPfmvHnMSeaJrs3sJfWNEBGEjZbr4xVnhtie6Q=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_arrow_left
+ _24_filled.xml
+SHA-256-Digest: PXsz4p4D2vS8Eeni7H6hjArF1qjW+j7CBmZZkVMMgQA=
+
+Name: res/layout-sw600dp-v13/azure_communication_ui_calling_control_ba
+ r_view.xml
+SHA-256-Digest: 2aZPX84iApJ0m0cTW4Md3R64IhiLvbKINOETqPyJzng=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_6dp_floating_header.xml
+SHA-256-Digest: BG9i8rS06E5+ZjJrGpnjmg/0wJrlbZDCCiRNeq1NVWY=
+
+Name: res/layout/azure_communication_ui_calling_call_lobby_overlay.xml
+SHA-256-Digest: 4lqmCXrjY6zU99MQKNfYrxjcT2tD7+7VUXTWdo7IOik=
+
+Name: res/values-ko/values-ko.xml
+SHA-256-Digest: L47uVMxjDjOTuHkenobYtk2V2z7rKNJXbWEMzCj+UIU=
+
+Name: res/values-zh-rCN/values-zh-rCN.xml
+SHA-256-Digest: ThUGD880dF4T8GvllwFJyra20NZKlx4jc7hoiWiqW3s=
+
+Name: res/values-ja/values-ja.xml
+SHA-256-Digest: LMCUL99JpEGnRXWsLVXSLFOS1eZKCAO/9+NbFlFZ5Y0=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_video_off_
+ 24_filled_composite_button_filled_grey.xml
+SHA-256-Digest: cnvu2x7Yi4wkIYux2ES2DmDGyv+9qVn9aLIFOCIvL4M=
+
+Name: res/color/azure_communication_ui_calling_on_primary_enabled_disa
+ bled_selector.xml
+SHA-256-Digest: Pd5lH1t9Fsb1BRnVyLm9Ia9Gl7th7fP/KCssHSxQB8o=
+
+Name: res/values-ko-rKR/values-ko-rKR.xml
+SHA-256-Digest: L47uVMxjDjOTuHkenobYtk2V2z7rKNJXbWEMzCj+UIU=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_4dp_background.xml
+SHA-256-Digest: mt/k0jUKW2inb2+FK0H8H+wjLuggfcgWii/fODTC+o0=
+
+Name: res/layout-land/azure_communication_ui_calling_call_fragment.xml
+SHA-256-Digest: Dv1xnMfuTOAr8Rq6hryjRWgnkv/nlBYMZkMWeIjpXu0=
+
+Name: res/layout/azure_communication_ui_calling_participant_video_view
+ .xml
+SHA-256-Digest: tP4IkmHfbqBzm+pjujz7fj8heOPBNksTqKcKN9BReS8=
+
+Name: res/color/azure_communication_ui_calling_toggle_selector.xml
+SHA-256-Digest: fQIvBpNwyLMR4wO+BJFDvSVkoUhdu6859VULMAybJcs=
+
+Name: res/drawable/azure_communication_ui_calling_toggle_selector_mic_
+ for_call.xml
+SHA-256-Digest: G7YDa65/P/6c1Cd4oIr8rWrHknU+Kc85i1HZSG0+6/Q=
+
+Name: res/layout/azure_communication_ui_calling_listview.xml
+SHA-256-Digest: M5WEoHKr9EUP7wvd5yiXwz8+F7FzjlHyG9/iWE6KnCM=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_speaker_2_
+ 24_regular_composite_button_filled.xml
+SHA-256-Digest: gkmOIGOCqla/6+ZCZpr+tFVzyjdcIXeoFWOkK9VQslA=
+
+Name: res/values/values.xml
+SHA-256-Digest: 4aLUaJkeCrWPSMJNW0Pl7wg3rxaBqV9VUC2xjQXIWuo=
+
+Name: res/layout/azure_communication_ui_calling_call_local_user_view.x
+ ml
+SHA-256-Digest: d/t30utzV4RGd1cxl5hVdZb/PwFAvzLTglwwBGMgXHE=
+
+Name: res/values-it/values-it.xml
+SHA-256-Digest: LqTKGBfats/ibZmGzDRFRtoSQrVkBxg41y049r1M8ag=
+
+Name: res/drawable/azure_communication_ui_calling_toggle_selector_devi
+ ce_for_setup.xml
+SHA-256-Digest: heiVnJWSboNjU0WanYFEwFzntKCKCWwEnyan8MticCw=
+
+Name: res/layout/azure_communication_ui_calling_call_banner.xml
+SHA-256-Digest: RrC/+5viuHkWO1RIc8xq3UyVFg0kRPe4tVOaFBsRoNo=
+
+Name: res/layout/azure_communication_ui_calling_bottom_drawer_cell.xml
+SHA-256-Digest: 6uOyrYAlh6agKklyvo2c1fFBEYBMYFDw++YWUA37qhY=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_off_24
+ _regular.xml
+SHA-256-Digest: OWumbb02U/chOCFeFzF8gcIYLLvWLyioekegIBy1FM8=
+
+Name: res/values-nl/values-nl.xml
+SHA-256-Digest: mNlxSai0csK4xobwU3keVK6FGdPynby+4o2ZIpMzk14=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_off_24
+ _filled_composite_button_filled.xml
+SHA-256-Digest: PMEK+l5lFHFf1oCrmQEm9BHcCf9SuCoHuqyeTXVvfLU=
+
+Name: res/drawable/azure_communication_ui_calling_speaking_rectangle_i
+ ndicator_no_corner.xml
+SHA-256-Digest: LqIL8qVMo7WUkK7AM/zsnIzmFwXFe8e88U/Yn+WRQCY=
+
+Name: res/drawable/azure_communication_ui_calling_speaking_rectangle_i
+ ndicator.xml
+SHA-256-Digest: p5MuVMZNan6mcZp1vFxDGEACUegZQej9HfoI0ocVgFg=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_video_24_f
+ illed_composite_button_filled.xml
+SHA-256-Digest: S4P0G1YBMnQdgrxTngN5SgiktcsK8bN6c61P91+EjCo=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_4dp.xml
+SHA-256-Digest: gaRnbniOzy6zngOOaGQelz6zNXZV+AP8TQZaxWC91ng=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_meet_now_2
+ 4_regular_composite_button_enabled.xml
+SHA-256-Digest: yEEEKfvcvAKjxVhJmv6TC51vxm+WOISQ99c3pBk4gtY=
+
+Name: res/layout/azure_communication_ui_calling_call_header.xml
+SHA-256-Digest: 7/A4zymAXuMEVpO5aF9/daVouA7popfVKW+IiwXKq9o=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_4dp_surface.xml
+SHA-256-Digest: 2sSoznfBhujalNOsZa+n/+ou7XsBe3+DZgASWmP844U=
+
+Name: res/layout-land/azure_communication_ui_calling_control_bar_view.
+ xml
+SHA-256-Digest: JkObHARBMNbV/i615lIt2mU5fimoELg/dPF4qvcHxb0=
+
+Name: res/values-it-rIT/values-it-rIT.xml
+SHA-256-Digest: LqTKGBfats/ibZmGzDRFRtoSQrVkBxg41y049r1M8ag=
+
+Name: res/values-ru/values-ru.xml
+SHA-256-Digest: +tiWQJd/cQcMgpccmTFTCrGq38QMuF5EaSqnNy07OLc=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_dot_button
+ _22_composite_button_filled.xml
+SHA-256-Digest: oKKdwyppAgBJ9o4CpNIoM2TkYlFMwYR1nR3X+hAL8/0=
+
+Name: classes.jar
+SHA-256-Digest: kReVWZAlnDw+efmbY/CVkwjGBdXM+OJX1HllkB4TxCk=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_speaker_2_
+ 24_filled_composite_button_enabled.xml
+SHA-256-Digest: 1tIXJlRjV4D1zQRExAfqm5yMhf1lCbjVNQ6NDnwJc8Q=
+
+Name: res/drawable/azure_communication_ui_calling_leave_confirm_dismis
+ s_16_regular.xml
+SHA-256-Digest: t6FhBorMFaRv+EcPnO7JeyqndF1jUMu2hwQc11qX5+E=
+
+Name: res/layout/azure_communication_ui_calling_fragment_setup.xml
+SHA-256-Digest: vIAzP4an9DpF/idtehvYYw8EOg91Ok2ewe3Bfz0lsCI=
+
+Name: res/layout/azure_communication_ui_calling_control_bar_view.xml
+SHA-256-Digest: 1yCv2bHzQ2Mk8G5bGsBx+GL8nB/DTkUgI1Bz6GJZWDM=
+
+Name: res/drawable/azure_communication_ui_calling_toggle_selector_came
+ ra_for_call.xml
+SHA-256-Digest: 10LTi3atvylmz4f5dXpTYSwycMDCchz1ol0uNnbOqiY=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_camera_swi
+ tch_24_regular_composite_button_enabled.xml
+SHA-256-Digest: EPV+tBnQWJpKEwFySlhFCZNqdQ/RwWUrHLXGznQ+uqs=
+
+Name: res/values-zh-rTW/values-zh-rTW.xml
+SHA-256-Digest: shwH9BAZ5yI5V7yyfMx435JWq23J44WUsamydVz5hnk=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_mic_on_24_
+ filled_composite_button_filled_grey.xml
+SHA-256-Digest: pmmvun2ehHYf5Hlk2jVM7gQxUaeo45TjrrQvYyZK2/Y=
+
+Name: res/drawable/azure_communication_ui_calling_speaking_round_indic
+ ator.xml
+SHA-256-Digest: f/RcMjzAeg+2j/TnHt+ywQSbnu4TjXOGeNxM8KLnnVM=
+
+Name: res/drawable/azure_communication_ui_calling_background_gradient.
+ xml
+SHA-256-Digest: mEyLviu/2tLjtMpyXg7EJnLDA5Nv3ZG9TDAoEiNecew=
+
+Name: res/layout/azure_communication_ui_calling_call_local_pip_video.x
+ ml
+SHA-256-Digest: fk6sJhjQXL1pSuUzAV//ZlilZbW+3n3gKLHu73K6xBo=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_video_24_f
+ illed_composite_button_filled_grey.xml
+SHA-256-Digest: zEgTfLHAikKknEpC9Mism8Fq8Ekuae+tVqBPwiWsAE4=
+
+Name: res/values-es-rES/values-es-rES.xml
+SHA-256-Digest: S6Zki/2FJFV6FoHodeab4cPGEuuyyReGyFB1w+HJV0s=
+
+Name: res/layout-sw600dp-land-v13/azure_communication_ui_calling_contr
+ ol_bar_view.xml
+SHA-256-Digest: qcZ/FOHZMdLEk0+KzELNAuMm1pPnRgGIt1MutLhmD6k=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_4dp_drawer_background.xml
+SHA-256-Digest: 2NBME4lCBzuIfnsOAhcKis5d+n6wph2+Z1TM38AEASA=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_call_end_2
+ 8_filled_composite_button_filled.xml
+SHA-256-Digest: NZed5bheVhMVNmfOFbbpnbdrJvG89QSw/Ct1c0wVPGY=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_4dp_primary_background.xml
+SHA-256-Digest: V27/4QHm76pEFbJMDbFrRYDQcet6brGT4xWSkQm5vZM=
+
+Name: res/drawable/azure_communication_ui_calling_corner_radius_rectan
+ gle_3dp_surface.xml
+SHA-256-Digest: nuNHRZuUU6JGswru+KdzKo+6RzQvdDfhrmi6zEHqxBc=
+
+Name: res/drawable/azure_communication_ui_calling_ic_fluent_call_16_fi
+ lled.xml
+SHA-256-Digest: hxp7VuhB4GEymguFylxBrHtcPMDLlvpJmcNSSK6EVcw=
+

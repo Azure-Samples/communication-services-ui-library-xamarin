@@ -1,0 +1,949 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.azure.android.communication.common"
+    jni-name="com/azure/android/communication/common">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/communication/common/UserCredential;"
+      extends="com.azure.android.communication.common.UserCredential"
+      extends-generic-aware="com.azure.android.communication.common.UserCredential"
+      final="true"
+      name="AutoRefreshUserCredential"
+      jni-signature="Lcom/azure/android/communication/common/AutoRefreshUserCredential;"
+      source-file-name="AutoRefreshUserCredential.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dispose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getToken"
+        native="false"
+        return="java9.util.concurrent.CompletableFuture&lt;com.azure.android.communication.common.CommunicationAccessToken&gt;"
+        jni-return="Ljava9/util/concurrent/CompletableFuture&lt;Lcom/azure/android/communication/common/CommunicationAccessToken;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava9/util/concurrent/CompletableFuture;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/azure/android/communication/common/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LIBRARY_PACKAGE_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.azure.android.communication.common&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;1.0.0&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CommunicationAccessToken"
+      jni-signature="Lcom/azure/android/communication/common/CommunicationAccessToken;"
+      source-file-name="CommunicationAccessToken.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationAccessToken"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lorg/threeten/bp/OffsetDateTime;)V">
+        <parameter
+          name="token"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="expiresAt"
+          type="org.threeten.bp.OffsetDateTime"
+          jni-type="Lorg/threeten/bp/OffsetDateTime;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getExpiresAt"
+        native="false"
+        return="org.threeten.bp.OffsetDateTime"
+        jni-return="Lorg/threeten/bp/OffsetDateTime;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lorg/threeten/bp/OffsetDateTime;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getToken"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isExpired"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/core/util/ExpandableStringEnum;"
+      extends="com.azure.android.core.util.ExpandableStringEnum"
+      extends-generic-aware="com.azure.android.core.util.ExpandableStringEnum&lt;com.azure.android.communication.common.CommunicationCloudEnvironment&gt;"
+      final="true"
+      name="CommunicationCloudEnvironment"
+      jni-signature="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;"
+      source-file-name="CommunicationCloudEnvironment.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationCloudEnvironment"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="fromString"
+        native="false"
+        return="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        jni-return="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/azure/android/communication/common/CommunicationCloudEnvironment;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DOD"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        type-generic-aware="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        jni-signature="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="GCCH"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        type-generic-aware="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        jni-signature="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="PUBLIC"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        type-generic-aware="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        jni-signature="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="CommunicationIdentifier"
+      jni-signature="Lcom/azure/android/communication/common/CommunicationIdentifier;"
+      source-file-name="CommunicationIdentifier.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CommunicationTokenCredential"
+      jni-signature="Lcom/azure/android/communication/common/CommunicationTokenCredential;"
+      source-file-name="CommunicationTokenCredential.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationTokenCredential"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/azure/android/communication/common/CommunicationTokenRefreshOptions;)V">
+        <parameter
+          name="tokenRefreshOptions"
+          type="com.azure.android.communication.common.CommunicationTokenRefreshOptions"
+          jni-type="Lcom/azure/android/communication/common/CommunicationTokenRefreshOptions;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationTokenCredential"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="userToken"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dispose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getToken"
+        native="false"
+        return="java9.util.concurrent.CompletableFuture&lt;com.azure.android.communication.common.CommunicationAccessToken&gt;"
+        jni-return="Ljava9/util/concurrent/CompletableFuture&lt;Lcom/azure/android/communication/common/CommunicationAccessToken;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava9/util/concurrent/CompletableFuture;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CommunicationTokenRefreshOptions"
+      jni-signature="Lcom/azure/android/communication/common/CommunicationTokenRefreshOptions;"
+      source-file-name="CommunicationTokenRefreshOptions.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationTokenRefreshOptions"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/concurrent/Callable;Z)V">
+        <parameter
+          name="tokenRefresher"
+          type="java.util.concurrent.Callable&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/concurrent/Callable&lt;Ljava/lang/String;&gt;;" />
+        <parameter
+          name="refreshProactively"
+          type="boolean"
+          jni-type="Z" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationTokenRefreshOptions"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/concurrent/Callable;ZLjava/lang/String;)V">
+        <parameter
+          name="tokenRefresher"
+          type="java.util.concurrent.Callable&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/concurrent/Callable&lt;Ljava/lang/String;&gt;;" />
+        <parameter
+          name="refreshProactively"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="initialToken"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInitialToken"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTokenRefresher"
+        native="false"
+        return="java.util.concurrent.Callable&lt;java.lang.String&gt;"
+        jni-return="Ljava/util/concurrent/Callable&lt;Ljava/lang/String;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/concurrent/Callable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isRefreshProactively"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/communication/common/CommunicationIdentifier;"
+      extends="com.azure.android.communication.common.CommunicationIdentifier"
+      extends-generic-aware="com.azure.android.communication.common.CommunicationIdentifier"
+      final="true"
+      name="CommunicationUserIdentifier"
+      jni-signature="Lcom/azure/android/communication/common/CommunicationUserIdentifier;"
+      source-file-name="CommunicationUserIdentifier.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CommunicationUserIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="that"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/communication/common/CommunicationIdentifier;"
+      extends="com.azure.android.communication.common.CommunicationIdentifier"
+      extends-generic-aware="com.azure.android.communication.common.CommunicationIdentifier"
+      final="true"
+      name="MicrosoftTeamsUserIdentifier"
+      jni-signature="Lcom/azure/android/communication/common/MicrosoftTeamsUserIdentifier;"
+      source-file-name="MicrosoftTeamsUserIdentifier.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="MicrosoftTeamsUserIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="userId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="MicrosoftTeamsUserIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Z)V">
+        <parameter
+          name="userId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="isAnonymous"
+          type="boolean"
+          jni-type="Z" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="that"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCloudEnvironment"
+        native="false"
+        return="com.azure.android.communication.common.CommunicationCloudEnvironment"
+        jni-return="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/azure/android/communication/common/CommunicationCloudEnvironment;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getRawId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getUserId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isAnonymous"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setCloudEnvironment"
+        native="false"
+        return="com.azure.android.communication.common.MicrosoftTeamsUserIdentifier"
+        jni-return="Lcom/azure/android/communication/common/MicrosoftTeamsUserIdentifier;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/azure/android/communication/common/CommunicationCloudEnvironment;)Lcom/azure/android/communication/common/MicrosoftTeamsUserIdentifier;">
+        <parameter
+          name="cloudEnvironment"
+          type="com.azure.android.communication.common.CommunicationCloudEnvironment"
+          jni-type="Lcom/azure/android/communication/common/CommunicationCloudEnvironment;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setRawId"
+        native="false"
+        return="com.azure.android.communication.common.MicrosoftTeamsUserIdentifier"
+        jni-return="Lcom/azure/android/communication/common/MicrosoftTeamsUserIdentifier;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/azure/android/communication/common/MicrosoftTeamsUserIdentifier;">
+        <parameter
+          name="rawId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/communication/common/CommunicationIdentifier;"
+      extends="com.azure.android.communication.common.CommunicationIdentifier"
+      extends-generic-aware="com.azure.android.communication.common.CommunicationIdentifier"
+      final="true"
+      name="PhoneNumberIdentifier"
+      jni-signature="Lcom/azure/android/communication/common/PhoneNumberIdentifier;"
+      source-file-name="PhoneNumberIdentifier.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="PhoneNumberIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="phoneNumber"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="that"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getPhoneNumber"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getRawId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setRawId"
+        native="false"
+        return="com.azure.android.communication.common.PhoneNumberIdentifier"
+        jni-return="Lcom/azure/android/communication/common/PhoneNumberIdentifier;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/azure/android/communication/common/PhoneNumberIdentifier;">
+        <parameter
+          name="rawId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/communication/common/UserCredential;"
+      extends="com.azure.android.communication.common.UserCredential"
+      extends-generic-aware="com.azure.android.communication.common.UserCredential"
+      final="true"
+      name="StaticUserCredential"
+      jni-signature="Lcom/azure/android/communication/common/StaticUserCredential;"
+      source-file-name="StaticUserCredential.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getToken"
+        native="false"
+        return="java9.util.concurrent.CompletableFuture&lt;com.azure.android.communication.common.CommunicationAccessToken&gt;"
+        jni-return="Ljava9/util/concurrent/CompletableFuture&lt;Lcom/azure/android/communication/common/CommunicationAccessToken;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava9/util/concurrent/CompletableFuture;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TokenParser"
+      jni-signature="Lcom/azure/android/communication/common/TokenParser;"
+      source-file-name="TokenParser.java"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/communication/common/CommunicationIdentifier;"
+      extends="com.azure.android.communication.common.CommunicationIdentifier"
+      extends-generic-aware="com.azure.android.communication.common.CommunicationIdentifier"
+      final="true"
+      name="UnknownIdentifier"
+      jni-signature="Lcom/azure/android/communication/common/UnknownIdentifier;"
+      source-file-name="UnknownIdentifier.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="UnknownIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="that"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="UserCredential"
+      jni-signature="Lcom/azure/android/communication/common/UserCredential;"
+      source-file-name="UserCredential.java"
+      static="false"
+      visibility="" />
+  </package>
+</api>

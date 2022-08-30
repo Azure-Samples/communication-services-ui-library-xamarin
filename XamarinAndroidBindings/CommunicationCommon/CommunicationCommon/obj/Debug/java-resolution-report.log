@@ -1,0 +1,6 @@
+==== Cycle 1 ====
+
+The method '[Method] java9.util.concurrent.CompletableFuture<com.azure.android.communication.common.CommunicationAccessToken> getToken()' was removed because the Java return type 'java9.util.concurrent.CompletableFuture<com.azure.android.communication.common.CommunicationAccessToken>' could not be found.
+The method '[Method] java9.util.concurrent.CompletableFuture<com.azure.android.communication.common.CommunicationAccessToken> getToken()' was removed because the Java return type 'java9.util.concurrent.CompletableFuture<com.azure.android.communication.common.CommunicationAccessToken>' could not be found.
+The method '[Method] java9.util.concurrent.CompletableFuture<com.azure.android.communication.common.CommunicationAccessToken> getToken()' was removed because the Java return type 'java9.util.concurrent.CompletableFuture<com.azure.android.communication.common.CommunicationAccessToken>' could not be found.
+

@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{60E01675-0549-4D67-8789-58EA9038839A}|Default">
+  <MonoDevelop.Ide.ItemProperties.CommunicationUILibrary PreferredExecutionTarget="Android.Pixel_3a_API_30_x86" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CommunicationUILibrary" expanded="True">
+            <Node name="CommunicationUILibrary" expanded="True">
+              <Node name="Additions" expanded="True" />
+              <Node name="Jars" expanded="True">
+                <Node name="azure-communication-ui-calling-1.0.0.aar" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

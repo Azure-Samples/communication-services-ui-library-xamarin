@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunicationCallingXamarinSampleApp.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Video calling sample" Margin="62.5, 273" HorizontalOptions="Center" TextColor="#212121" FontSize="26" FontFamily="SF Pro Display" FontAttributes="Bold"/>
+            <Button Text="Join a call" Margin="16, 0" Clicked="OnJoinCallButtonClicked" BackgroundColor="#0078D4" TextColor="White"></Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

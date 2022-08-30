@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="azure_communication_ui_calling_primary_color" type="color|reference"/>
+    <attr name="azure_communication_ui_calling_primary_color_tint10" type="color|reference"/>
+    <attr name="azure_communication_ui_calling_primary_color_tint20" type="color|reference"/>
+    <attr name="azure_communication_ui_calling_primary_color_tint30" type="color|reference"/>
+    <color name="azure_communication_ui_calling_color_action_bar_text">#000000</color>
+    <color name="azure_communication_ui_calling_color_background">#FFFFFF</color>
+    <color name="azure_communication_ui_calling_color_background_red">#A42E43</color>
+    <color name="azure_communication_ui_calling_color_bottom_drawer_background">#FFFFFF</color>
+    <color name="azure_communication_ui_calling_color_button_background_transparent">#00000000</color>
+    <color name="azure_communication_ui_calling_color_button_switch_camera">#66000000</color>
+    <color name="azure_communication_ui_calling_color_call_leave_overlay">#CC000000</color>
+    <color name="azure_communication_ui_calling_color_call_lobby_overlay">#CCFFFFFF</color>
+    <color name="azure_communication_ui_calling_color_disabled">#E1E1E1</color>
+    <color name="azure_communication_ui_calling_color_error">#D92C2C</color>
+    <color name="azure_communication_ui_calling_color_floating_header">#99000000</color>
+    <color name="azure_communication_ui_calling_color_focus_highlight">#808080</color>
+    <color name="azure_communication_ui_calling_color_on_background">#141414</color>
+    <color name="azure_communication_ui_calling_color_on_disabled">#ACACAC</color>
+    <color name="azure_communication_ui_calling_color_on_error">#FFFFFF</color>
+    <color name="azure_communication_ui_calling_color_on_primary">#FFFFFF</color>
+    <color name="azure_communication_ui_calling_color_on_success">#FFFFFF</color>
+    <color name="azure_communication_ui_calling_color_on_surface">#141414</color>
+    <color name="azure_communication_ui_calling_color_on_surface_camera_active">#FFFFFF</color>
+    <color name="azure_communication_ui_calling_color_on_surface_disabled">#ACACAC</color>
+    <color name="azure_communication_ui_calling_color_on_warning">#141414</color>
+    <color name="azure_communication_ui_calling_color_participant_list_mute_mic">#919191</color>
+    <color name="azure_communication_ui_calling_color_primary">#0078D4</color>
+    <color name="azure_communication_ui_calling_color_snack_bar_background">#FFD335</color>
+    <color name="azure_communication_ui_calling_color_snack_bar_text_color">#212121</color>
+    <color name="azure_communication_ui_calling_color_status_bar">#ffffff</color>
+    <color name="azure_communication_ui_calling_color_success">#13A10E</color>
+    <color name="azure_communication_ui_calling_color_surface">#E1E1E1</color>
+    <color name="azure_communication_ui_calling_color_text_primary">#212121</color>
+    <color name="azure_communication_ui_calling_color_transparent_background">#000000</color>
+    <color name="azure_communication_ui_calling_color_warning">#FFD335</color>
+    <color name="azure_communication_ui_calling_color_white">#FFFFFF</color>
+    <dimen name="azure_communication_ui_calling_box_inset_layout_padding">0dp</dimen>
+    <dimen name="azure_communication_ui_calling_fab_margin">16dp</dimen>
+    <dimen name="azure_communication_ui_calling_inner_frame_layout_padding">5dp</dimen>
+    <integer name="azure_communication_ui_calling_max_remote_participants">6</integer>
+    <string name="azure_communication_ui_calling_accessibility_meeting_connected">You have joined the call</string>
+    <string name="azure_communication_ui_calling_accessibility_user_added">%1$s has joined the meeting</string>
+    <string name="azure_communication_ui_calling_accessibility_user_left">%1$s has left the meeting</string>
+    <string name="azure_communication_ui_calling_alert_title">Alert</string>
+    <string name="azure_communication_ui_calling_audio_device_drawer_android">Android</string>
+    <string name="azure_communication_ui_calling_audio_device_drawer_bluetooth">Bluetooth</string>
+    <string name="azure_communication_ui_calling_audio_device_drawer_headphone">Headset</string>
+    <string name="azure_communication_ui_calling_audio_device_drawer_speaker">Speaker</string>
+    <string name="azure_communication_ui_calling_button_switch_camera_accessibility_label">Switch Camera</string>
+    <string name="azure_communication_ui_calling_call_setup_action_bar_title">Setup</string>
+    <string name="azure_communication_ui_calling_call_state_error_call_end">You were removed from the call due to an error.</string>
+    <string name="azure_communication_ui_calling_call_state_evicted">You were removed from the call.</string>
+    <string name="azure_communication_ui_calling_hold_view_text">You\'re on hold</string>
+    <string name="azure_communication_ui_calling_lobby_view_text_waiting_details">Someone in the meeting will let you in soon</string>
+    <string name="azure_communication_ui_calling_lobby_view_text_waiting_for_host">Waiting for host</string>
+    <string name="azure_communication_ui_calling_mic_used">Unable to resume call\nYour mic is in use by another app.</string>
+    <string name="azure_communication_ui_calling_remote_participant_on_hold">On hold</string>
+    <string name="azure_communication_ui_calling_resume">Resume</string>
+    <string name="azure_communication_ui_calling_selected_audio_device_announcement">%1$s audio device, selected</string>
+    <string name="azure_communication_ui_calling_service_notification_message">Tap to return to the call</string>
+    <string name="azure_communication_ui_calling_service_notification_title">Ongoing call</string>
+    <string name="azure_communication_ui_calling_setup_audio_device_select_content_description">Select Audio Device %1$s</string>
+    <string name="azure_communication_ui_calling_setup_view_audio_device_selected_accessibility_label">Selected</string>
+    <string name="azure_communication_ui_calling_setup_view_background_gradient_accessibility_label">Setup Gradient</string>
+    <string name="azure_communication_ui_calling_setup_view_button_connecting_call">Joining call…</string>
+    <string name="azure_communication_ui_calling_setup_view_button_join_call">Join call</string>
+    <string name="azure_communication_ui_calling_setup_view_button_mic_off">Mic off</string>
+    <string name="azure_communication_ui_calling_setup_view_button_mic_on">Mic on</string>
+    <string name="azure_communication_ui_calling_setup_view_button_video_off">Video off</string>
+    <string name="azure_communication_ui_calling_setup_view_button_video_on">Video on</string>
+    <string name="azure_communication_ui_calling_setup_view_preview_area_audio_disabled">Your audio is disabled. To enable, please go to Settings to allow access. You must
+        enable audio to start this call.</string>
+    <string name="azure_communication_ui_calling_setup_view_preview_area_camera_disabled">Your camera is disabled. To enable, please go to Settings
+        to allow access.</string>
+    <string name="azure_communication_ui_calling_setup_view_warning_missing_text">Permissions required</string>
+    <string name="azure_communication_ui_calling_snack_bar_button_dismiss">Dismiss</string>
+    <string name="azure_communication_ui_calling_snack_bar_text_error_call_join">Unable to join the call due to an error.</string>
+    <string name="azure_communication_ui_calling_switch_camera_button_back">Switch to Back Camera</string>
+    <string name="azure_communication_ui_calling_switch_camera_button_front">Switch to Front Camera</string>
+    <string name="azure_communication_ui_calling_view_banner_recording_and_transcribing_started"><b>Recording and transcription have
+        started.</b> By joining, you are giving consent for this meeting to be transcribed
+        . <u>Privacy policy</u></string>
+    <string name="azure_communication_ui_calling_view_banner_recording_and_transcribing_stopped"><b>Recording and transcription are
+        being saved.</b> Recording and transcription have stopped. <u>Learn More</u></string>
+    <string name="azure_communication_ui_calling_view_banner_recording_started"><b>Recording has started.</b> By joining, you are
+        giving consent for this meeting to be transcribed.
+         <u>Privacy policy</u></string>
+    <string name="azure_communication_ui_calling_view_banner_recording_stopped"><b>Recording is being saved.</b> Recording has stopped.
+         <u>Learn More</u></string>
+    <string name="azure_communication_ui_calling_view_banner_recording_stopped_still_transcribing"><b>Recording has stopped.</b> You
+        are now only transcribing this meeting. <u>Privacy policy</u></string>
+    <string name="azure_communication_ui_calling_view_banner_transcription_started"><b>Transcription has started.</b> By joining, you
+        are giving consent for this meeting to be transcribed. <u>Privacy policy</u></string>
+    <string name="azure_communication_ui_calling_view_banner_transcription_stopped"><b>Transcription is being saved.</b> Transcription
+        has stopped. <u>Learn More</u></string>
+    <string name="azure_communication_ui_calling_view_banner_transcription_stopped_still_recording"><b>Transcription has stopped.
+    </b> You are now only recording this meeting. <u>Privacy policy</u></string>
+    <string name="azure_communication_ui_calling_view_button_close_button_accessibility_label">Close</string>
+    <string name="azure_communication_ui_calling_view_button_close_button_full_accessibility_label">Close Button</string>
+    <string name="azure_communication_ui_calling_view_button_device_options_accessibility_label">Device Options</string>
+    <string name="azure_communication_ui_calling_view_button_hang_up_accessibility_label">Hang Up</string>
+    <string name="azure_communication_ui_calling_view_button_toggle_audio_accessibility_label">Toggle Audio</string>
+    <string name="azure_communication_ui_calling_view_button_toggle_video_accessibility_label">Toggle Video</string>
+    <string name="azure_communication_ui_calling_view_info_header_call_with_1_person">Call with 1 person</string>
+    <string name="azure_communication_ui_calling_view_info_header_call_with_n_people">Call with %1$d people</string>
+    <string name="azure_communication_ui_calling_view_info_header_waiting_for_others_to_join">Waiting for others to join</string>
+    <string name="azure_communication_ui_calling_view_leave_call">Leave call?</string>
+    <string name="azure_communication_ui_calling_view_leave_call_button_text">Leave</string>
+    <string name="azure_communication_ui_calling_view_leave_call_cancel">Cancel</string>
+    <string name="azure_communication_ui_calling_view_leave_confirm_menu">Leave confirm menu</string>
+    <string name="azure_communication_ui_calling_view_link">Link</string>
+    <string name="azure_communication_ui_calling_view_link_learn_more_url" translatable="false">
+        https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24
+    </string>
+    <string name="azure_communication_ui_calling_view_link_privacy_policy_url" translatable="false">
+        https://privacy.microsoft.com/privacystatement#mainnoticetoendusersmodule
+    </string>
+    <string name="azure_communication_ui_calling_view_participant_drawer_local_participant">(me)</string>
+    <string name="azure_communication_ui_calling_view_participant_drawer_unnamed">Unnamed participant</string>
+    <string name="azure_communication_ui_calling_view_participant_list_dismiss_list">Double tap to dismiss Participant list</string>
+    <string name="azure_communication_ui_calling_view_participant_list_muted_accessibility_label">Muted</string>
+    <string name="azure_communication_ui_calling_view_participant_list_open_accessibility_label">Open Participant List</string>
+    <string name="azure_communication_ui_calling_view_participant_list_unmuted_accessibility_label">Unmuted</string>
+    <style name="AzureCommunicationUICalling.ButtonText" parent="TextAppearance.FluentUI.Button">
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="AzureCommunicationUICalling.Theme" parent="Base.Theme.FluentUI">
+        <!-- Primary brand color
+
+        Current supported theming is the Primary Brand Color, which is represented by
+        fluent_ui's communication colors & tints
+
+        Not all values are currently used, however may be in the future. When supplying
+        ensure that appropriate tints/shades for your Primary Color are supplied
+        -->
+        <item name="fluentuiDrawerBackgroundColor">
+            @color/azure_communication_ui_calling_color_bottom_drawer_background
+        </item>
+        <item name="azure_communication_ui_calling_primary_color">
+            @color/fluentui_communication_blue
+        </item>
+        <item name="azure_communication_ui_calling_primary_color_tint10">#2B88D8</item>
+        <item name="azure_communication_ui_calling_primary_color_tint20">
+            @color/fluentui_communication_tint_20
+        </item>
+        <item name="azure_communication_ui_calling_primary_color_tint30">
+            @color/fluentui_communication_tint_30
+        </item>
+
+        <item name="android:colorControlHighlight">
+            @color/azure_communication_ui_calling_color_focus_highlight
+        </item>
+        <item name="titleTextColor">
+            @color/azure_communication_ui_calling_color_action_bar_text
+        </item>
+    </style>
+    <declare-styleable name="azure_communication_ui_calling">
+        <attr format="boolean" name="azure_communication_ui_calling_state_setup_camera_on"/>
+        <attr format="boolean" name="azure_communication_ui_calling_state_setup_audio_device_speaker"/>
+        <attr format="boolean" name="azure_communication_ui_calling_state_setup_audio_device_receiver"/>
+        <attr format="boolean" name="azure_communication_ui_calling_state_setup_audio_device_bluetooth"/>
+        <attr format="boolean" name="azure_communication_ui_calling_state_on"/>
+    </declare-styleable>
+</resources>

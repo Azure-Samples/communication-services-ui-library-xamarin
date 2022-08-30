@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22;ANDROID_23;ANDROID_24;ANDROID_25;ANDROID_26;ANDROID_27;ANDROID_28;ANDROID_29;ANDROID_30</DefineConstants>
+  </PropertyGroup>
+  <!-- Classes -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Exception.AzureException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Exception.ServiceResponseException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.Base64Url.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.Base64Util.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.CancellationToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.DateTimeRfc1123.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.ExpandableStringEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.Header.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.IAsyncStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.IAsyncStreamHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.IBiConsumer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.IFunction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.IPredicate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.IServiceVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.Option.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.Paging.IPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.Paging.IPagedAsyncStreamCore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.RequestContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Android.Core.Util.UnixTime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Azure.Core.Micro.BuildConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Java.Interop.__TypeRegistrations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)__NamespaceMapping__.cs" />
+  </ItemGroup>
+  <!-- Enums -->
+  <ItemGroup />
+</Project>

@@ -1,0 +1,1739 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.azure.android.core.exception"
+    jni-name="com/azure/android/core/exception">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/RuntimeException;"
+      extends="java.lang.RuntimeException"
+      extends-generic-aware="java.lang.RuntimeException"
+      final="false"
+      name="AzureException"
+      jni-signature="Lcom/azure/android/core/exception/AzureException;"
+      source-file-name="AzureException.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AzureException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AzureException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AzureException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Throwable;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="cause"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AzureException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Throwable;)V">
+        <parameter
+          name="cause"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </constructor>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/azure/android/core/exception/AzureException;"
+      extends="com.azure.android.core.exception.AzureException"
+      extends-generic-aware="com.azure.android.core.exception.AzureException"
+      final="false"
+      name="ServiceResponseException"
+      jni-signature="Lcom/azure/android/core/exception/ServiceResponseException;"
+      source-file-name="ServiceResponseException.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ServiceResponseException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ServiceResponseException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Throwable;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="cause"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </constructor>
+    </class>
+  </package>
+  <package
+    name="com.azure.android.core.util"
+    jni-name="com/azure/android/core/util">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AsyncStream"
+      jni-signature="Lcom/azure/android/core/util/AsyncStream;"
+      source-file-name="AsyncStream.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="forEach"
+        native="false"
+        return="com.azure.android.core.util.CancellationToken"
+        jni-return="Lcom/azure/android/core/util/CancellationToken;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/azure/android/core/util/AsyncStreamHandler;)Lcom/azure/android/core/util/CancellationToken;">
+        <parameter
+          name="p0"
+          type="com.azure.android.core.util.AsyncStreamHandler&lt;T&gt;"
+          jni-type="Lcom/azure/android/core/util/AsyncStreamHandler&lt;TT;&gt;;" />
+      </method>
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AsyncStreamHandler"
+      jni-signature="Lcom/azure/android/core/util/AsyncStreamHandler;"
+      source-file-name="AsyncStreamHandler.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onComplete"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onError"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Throwable;)V">
+        <parameter
+          name="throwable"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInit"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/azure/android/core/util/CancellationToken;)V">
+        <parameter
+          name="cancellationToken"
+          type="com.azure.android.core.util.CancellationToken"
+          jni-type="Lcom/azure/android/core/util/CancellationToken;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onNext"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="T"
+          jni-type="TT;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="Base64Url"
+      jni-signature="Lcom/azure/android/core/util/Base64Url;"
+      source-file-name="Base64Url.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Base64Url"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="string"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Base64Url"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)V">
+        <parameter
+          name="bytes"
+          type="byte[]"
+          jni-type="[B" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="decodedBytes"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[B" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="encode"
+        native="false"
+        return="com.azure.android.core.util.Base64Url"
+        jni-return="Lcom/azure/android/core/util/Base64Url;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)Lcom/azure/android/core/util/Base64Url;">
+        <parameter
+          name="bytes"
+          type="byte[]"
+          jni-type="[B" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="encodedBytes"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[B" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="obj"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="Base64Util"
+      jni-signature="Lcom/azure/android/core/util/Base64Util;"
+      source-file-name="Base64Util.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="decode"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)[B">
+        <parameter
+          name="encoded"
+          type="byte[]"
+          jni-type="[B" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="decodeString"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[B">
+        <parameter
+          name="encoded"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="decodeURL"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)[B">
+        <parameter
+          name="src"
+          type="byte[]"
+          jni-type="[B" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="encode"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)[B">
+        <parameter
+          name="src"
+          type="byte[]"
+          jni-type="[B" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="encodeToString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)Ljava/lang/String;">
+        <parameter
+          name="src"
+          type="byte[]"
+          jni-type="[B" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="encodeURLWithoutPadding"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)[B">
+        <parameter
+          name="src"
+          type="byte[]"
+          jni-type="[B" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="BiConsumer"
+      jni-signature="Lcom/azure/android/core/util/BiConsumer;"
+      source-file-name="BiConsumer.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+        <typeParameter
+          name="U"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="accept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="T"
+          jni-type="TT;" />
+        <parameter
+          name="p1"
+          type="U"
+          jni-type="TU;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CancellationToken"
+      jni-signature="Lcom/azure/android/core/util/CancellationToken;"
+      source-file-name="CancellationToken.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CancellationToken"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="cancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isCancellationRequested"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="registerOnCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Runnable;)V">
+        <parameter
+          name="onCancel"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="registerOnCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Runnable;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="onCancel"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="unregisterOnCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="id"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NONE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.azure.android.core.util.CancellationToken"
+        type-generic-aware="com.azure.android.core.util.CancellationToken"
+        jni-signature="Lcom/azure/android/core/util/CancellationToken;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CancellationToken.OnCancelNode"
+      jni-signature="Lcom/azure/android/core/util/CancellationToken$OnCancelNode;"
+      source-file-name="CancellationToken.java"
+      static="true"
+      visibility="private" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="DateTimeRfc1123"
+      jni-signature="Lcom/azure/android/core/util/DateTimeRfc1123;"
+      source-file-name="DateTimeRfc1123.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="DateTimeRfc1123"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="formattedString"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="DateTimeRfc1123"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lorg/threeten/bp/OffsetDateTime;)V">
+        <parameter
+          name="dateTime"
+          type="org.threeten.bp.OffsetDateTime"
+          jni-type="Lorg/threeten/bp/OffsetDateTime;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="obj"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDateTime"
+        native="false"
+        return="org.threeten.bp.OffsetDateTime"
+        jni-return="Lorg/threeten/bp/OffsetDateTime;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lorg/threeten/bp/OffsetDateTime;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ExpandableStringEnum"
+      jni-signature="Lcom/azure/android/core/util/ExpandableStringEnum;"
+      source-file-name="ExpandableStringEnum.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Lcom/azure/android/core/util/ExpandableStringEnum&lt;TT;&gt;;"
+          classBound="com.azure.android.core.util.ExpandableStringEnum&lt;T&gt;"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ExpandableStringEnum"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="obj"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="fromString"
+        native="false"
+        return="T"
+        jni-return="TT;"
+        static="true"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Class;)Lcom/azure/android/core/util/ExpandableStringEnum;">
+        <typeParameters>
+          <typeParameter
+            name="T"
+            jni-classBound="Lcom/azure/android/core/util/ExpandableStringEnum&lt;TT;&gt;;"
+            classBound="com.azure.android.core.util.ExpandableStringEnum&lt;T&gt;"
+            interfaceBounds=""
+            jni-interfaceBounds="" />
+        </typeParameters>
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="clazz"
+          type="java.lang.Class&lt;T&gt;"
+          jni-type="Ljava/lang/Class&lt;TT;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="java.util.Collection&lt;T&gt;"
+        jni-return="Ljava/util/Collection&lt;TT;&gt;;"
+        static="true"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Class;)Ljava/util/Collection;">
+        <typeParameters>
+          <typeParameter
+            name="T"
+            jni-classBound="Lcom/azure/android/core/util/ExpandableStringEnum&lt;TT;&gt;;"
+            classBound="com.azure.android.core.util.ExpandableStringEnum&lt;T&gt;"
+            interfaceBounds=""
+            jni-interfaceBounds="" />
+        </typeParameters>
+        <parameter
+          name="clazz"
+          type="java.lang.Class&lt;T&gt;"
+          jni-type="Ljava/lang/Class&lt;TT;&gt;;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="Function"
+      jni-signature="Lcom/azure/android/core/util/Function;"
+      source-file-name="Function.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="I"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+        <typeParameter
+          name="O"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="call"
+        native="false"
+        return="O"
+        jni-return="TO;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="I"
+          jni-type="TI;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Header"
+      jni-signature="Lcom/azure/android/core/util/Header;"
+      source-file-name="Header.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Header"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="value"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addValue"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="value"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getName"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getValue"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getValues"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="Option"
+      jni-signature="Lcom/azure/android/core/util/Option;"
+      source-file-name="Option.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="empty"
+        native="false"
+        return="com.azure.android.core.util.Option&lt;T&gt;"
+        jni-return="Lcom/azure/android/core/util/Option&lt;TT;&gt;;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/azure/android/core/util/Option;">
+        <typeParameters>
+          <typeParameter
+            name="T"
+            jni-classBound="Ljava/lang/Object;"
+            classBound="java.lang.Object"
+            interfaceBounds=""
+            jni-interfaceBounds="" />
+        </typeParameters>
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="obj"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getValue"
+        native="false"
+        return="T"
+        jni-return="TT;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isInitialized"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="of"
+        native="false"
+        return="com.azure.android.core.util.Option&lt;T&gt;"
+        jni-return="Lcom/azure/android/core/util/Option&lt;TT;&gt;;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Lcom/azure/android/core/util/Option;">
+        <typeParameters>
+          <typeParameter
+            name="T"
+            jni-classBound="Ljava/lang/Object;"
+            classBound="java.lang.Object"
+            interfaceBounds=""
+            jni-interfaceBounds="" />
+        </typeParameters>
+        <parameter
+          name="value"
+          type="T"
+          jni-type="TT;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="uninitialized"
+        native="false"
+        return="com.azure.android.core.util.Option&lt;T&gt;"
+        jni-return="Lcom/azure/android/core/util/Option&lt;TT;&gt;;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/azure/android/core/util/Option;">
+        <typeParameters>
+          <typeParameter
+            name="T"
+            jni-classBound="Ljava/lang/Object;"
+            classBound="java.lang.Object"
+            interfaceBounds=""
+            jni-interfaceBounds="" />
+        </typeParameters>
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="Predicate"
+      jni-signature="Lcom/azure/android/core/util/Predicate;"
+      source-file-name="Predicate.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="I"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="test"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="p0"
+          type="I"
+          jni-type="TI;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RequestContext"
+      jni-signature="Lcom/azure/android/core/util/RequestContext;"
+      source-file-name="RequestContext.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RequestContext"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;Ljava/lang/Object;)V">
+        <parameter
+          name="key"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <parameter
+          name="value"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addData"
+        native="false"
+        return="com.azure.android.core.util.RequestContext"
+        jni-return="Lcom/azure/android/core/util/RequestContext;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;Ljava/lang/Object;)Lcom/azure/android/core/util/RequestContext;">
+        <parameter
+          name="key"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <parameter
+          name="value"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getData"
+        native="false"
+        return="com.azure.android.core.util.Option&lt;java.lang.Object&gt;"
+        jni-return="Lcom/azure/android/core/util/Option&lt;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Lcom/azure/android/core/util/Option;">
+        <parameter
+          name="key"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NONE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.azure.android.core.util.RequestContext"
+        type-generic-aware="com.azure.android.core.util.RequestContext"
+        jni-signature="Lcom/azure/android/core/util/RequestContext;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="ServiceVersion"
+      jni-signature="Lcom/azure/android/core/util/ServiceVersion;"
+      source-file-name="ServiceVersion.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getVersion"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="UnixTime"
+      jni-signature="Lcom/azure/android/core/util/UnixTime;"
+      source-file-name="UnixTime.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="UnixTime"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)V">
+        <parameter
+          name="unixSeconds"
+          type="long"
+          jni-type="J" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="UnixTime"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lorg/threeten/bp/OffsetDateTime;)V">
+        <parameter
+          name="dateTime"
+          type="org.threeten.bp.OffsetDateTime"
+          jni-type="Lorg/threeten/bp/OffsetDateTime;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="obj"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDateTime"
+        native="false"
+        return="org.threeten.bp.OffsetDateTime"
+        jni-return="Lorg/threeten/bp/OffsetDateTime;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lorg/threeten/bp/OffsetDateTime;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+  </package>
+  <package
+    name="com.azure.android.core.util.paging"
+    jni-name="com/azure/android/core/util/paging">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="Page"
+      jni-signature="Lcom/azure/android/core/util/paging/Page;"
+      source-file-name="Page.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="C"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getContinuationToken"
+        native="false"
+        return="C"
+        jni-return="TC;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Object;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getElements"
+        native="false"
+        return="java.util.List&lt;T&gt;"
+        jni-return="Ljava/util/List&lt;TT;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="PagedAsyncStreamCore"
+      jni-signature="Lcom/azure/android/core/util/paging/PagedAsyncStreamCore;"
+      source-file-name="PagedAsyncStreamCore.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="C"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+        <typeParameter
+          name="P"
+          jni-classBound=""
+          classBound=""
+          interfaceBounds="com.azure.android.core.util.paging.Page&lt;C, T&gt;"
+          jni-interfaceBounds="Lcom/azure/android/core/util/paging/Page&lt;TC;TT;&gt;;" />
+      </typeParameters>
+      <implements
+        name="com.azure.android.core.util.AsyncStream"
+        name-generic-aware="com.azure.android.core.util.AsyncStream&lt;T&gt;"
+        jni-type="Lcom/azure/android/core/util/AsyncStream&lt;TT;&gt;;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="byPage"
+        native="false"
+        return="com.azure.android.core.util.AsyncStream&lt;P&gt;"
+        jni-return="Lcom/azure/android/core/util/AsyncStream&lt;TP;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/azure/android/core/util/AsyncStream;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="byPage"
+        native="false"
+        return="com.azure.android.core.util.AsyncStream&lt;P&gt;"
+        jni-return="Lcom/azure/android/core/util/AsyncStream&lt;TP;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Lcom/azure/android/core/util/AsyncStream;">
+        <parameter
+          name="p0"
+          type="C"
+          jni-type="TC;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="from"
+        native="false"
+        return="com.azure.android.core.util.AsyncStream&lt;T&gt;"
+        jni-return="Lcom/azure/android/core/util/AsyncStream&lt;TT;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Lcom/azure/android/core/util/AsyncStream;">
+        <parameter
+          name="p0"
+          type="C"
+          jni-type="TC;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getPage"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lcom/azure/android/core/util/BiConsumer;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="com.azure.android.core.util.BiConsumer&lt;P, java.lang.Throwable&gt;"
+          jni-type="Lcom/azure/android/core/util/BiConsumer&lt;TP;Ljava/lang/Throwable;&gt;;" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="com.azure.core.micro"
+    jni-name="com/azure/core/micro">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/azure/core/micro/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LIBRARY_PACKAGE_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.azure.core.micro&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;1.0.0-beta.9&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+</api>

@@ -1,0 +1,1279 @@
+{
+  "version": 3,
+  "targets": {
+    "MonoAndroid,Version=v11.0": {
+      "Square.OkHttp3/4.9.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "2.10.0.1",
+          "Xamarin.Kotlin.StdLib": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        }
+      },
+      "Square.OkIO/2.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.5.31.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        }
+      },
+      "Square.Retrofit2/2.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        }
+      },
+      "Xamarin.Android.JakeWharton.ThreeTenAbp/1.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        }
+      },
+      "Xamarin.AndroidX.Annotation/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Migration": "1.0.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Annotation.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Lifecycle.Common/2.3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Migration/1.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.MultiDex": "2.0.1.5"
+        },
+        "compile": {
+          "lib/monoandroid90/_._": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/_._": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props": {},
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.MultiDex/2.0.1.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.MultiDex.targets": {}
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.5.31.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "22.0.0.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "CommunicationCore/1.0.0": {
+        "type": "project",
+        "framework": "MonoAndroid,Version=v11.0",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.2.1",
+          "Square.Retrofit2": "2.9.0",
+          "Xamarin.Android.JakeWharton.ThreeTenAbp": "1.3.1",
+          "Xamarin.AndroidX.Annotation": "1.2.0.3",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        }
+      }
+    },
+    "MonoAndroid,Version=v11.0/win": {
+      "Square.OkHttp3/4.9.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "2.10.0.1",
+          "Xamarin.Kotlin.StdLib": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        }
+      },
+      "Square.OkIO/2.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.5.31.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        }
+      },
+      "Square.Retrofit2/2.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        }
+      },
+      "Xamarin.Android.JakeWharton.ThreeTenAbp/1.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        }
+      },
+      "Xamarin.AndroidX.Annotation/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Migration": "1.0.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Annotation.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Lifecycle.Common/2.3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Migration/1.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.MultiDex": "2.0.1.5"
+        },
+        "compile": {
+          "lib/monoandroid90/_._": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/_._": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props": {},
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.MultiDex/2.0.1.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.MultiDex.targets": {}
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.5.31.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "22.0.0.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "CommunicationCore/1.0.0": {
+        "type": "project",
+        "framework": "MonoAndroid,Version=v11.0",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.2.1",
+          "Square.Retrofit2": "2.9.0",
+          "Xamarin.Android.JakeWharton.ThreeTenAbp": "1.3.1",
+          "Xamarin.AndroidX.Annotation": "1.2.0.3",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        }
+      }
+    },
+    "MonoAndroid,Version=v11.0/win-x64": {
+      "Square.OkHttp3/4.9.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "2.10.0.1",
+          "Xamarin.Kotlin.StdLib": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        }
+      },
+      "Square.OkIO/2.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.5.31.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        }
+      },
+      "Square.Retrofit2/2.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        }
+      },
+      "Xamarin.Android.JakeWharton.ThreeTenAbp/1.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        }
+      },
+      "Xamarin.AndroidX.Annotation/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Migration": "1.0.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Annotation.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Lifecycle.Common/2.3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Migration/1.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.MultiDex": "2.0.1.5"
+        },
+        "compile": {
+          "lib/monoandroid90/_._": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/_._": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props": {},
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.MultiDex/2.0.1.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.MultiDex.targets": {}
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.5.31.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "22.0.0.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "CommunicationCore/1.0.0": {
+        "type": "project",
+        "framework": "MonoAndroid,Version=v11.0",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.2.1",
+          "Square.Retrofit2": "2.9.0",
+          "Xamarin.Android.JakeWharton.ThreeTenAbp": "1.3.1",
+          "Xamarin.AndroidX.Annotation": "1.2.0.3",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        }
+      }
+    },
+    "MonoAndroid,Version=v11.0/win-x86": {
+      "Square.OkHttp3/4.9.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "2.10.0.1",
+          "Xamarin.Kotlin.StdLib": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkHttp3.dll": {}
+        }
+      },
+      "Square.OkIO/2.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.5.31.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.OkIO.dll": {}
+        }
+      },
+      "Square.Retrofit2/2.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.Retrofit2.dll": {}
+        }
+      },
+      "Xamarin.Android.JakeWharton.ThreeTenAbp/1.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll": {}
+        }
+      },
+      "Xamarin.AndroidX.Annotation/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Migration": "1.0.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Annotation.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Lifecycle.Common/2.3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Migration/1.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.MultiDex": "2.0.1.5"
+        },
+        "compile": {
+          "lib/monoandroid90/_._": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/_._": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props": {},
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.MultiDex/2.0.1.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.AndroidX.MultiDex.targets": {}
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.5.31.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "22.0.0.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "CommunicationCore/1.0.0": {
+        "type": "project",
+        "framework": "MonoAndroid,Version=v11.0",
+        "dependencies": {
+          "Square.OkHttp3": "4.9.2.1",
+          "Square.Retrofit2": "2.9.0",
+          "Xamarin.Android.JakeWharton.ThreeTenAbp": "1.3.1",
+          "Xamarin.AndroidX.Annotation": "1.2.0.3",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommunicationCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Square.OkHttp3/4.9.2.1": {
+      "sha512": "pQLaDTCr+2denPTRt/zEg+4cHw2WMOEvgmPr4uu9OzCDwMgfV+7pTHzx7VmaQ6TeLsWvAE962bomwMTkqHPc7A==",
+      "type": "package",
+      "path": "square.okhttp3/4.9.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid90/Square.OkHttp3.dll",
+        "lib/monoandroid90/Square.OkHttp3.xml",
+        "lib/net6.0-android31.0/Square.OkHttp3.aar",
+        "lib/net6.0-android31.0/Square.OkHttp3.dll",
+        "lib/net6.0-android31.0/Square.OkHttp3.xml",
+        "square.okhttp3.4.9.2.1.nupkg.sha512",
+        "square.okhttp3.nuspec"
+      ]
+    },
+    "Square.OkIO/2.10.0.1": {
+      "sha512": "D1UeP4bQm4cCiZ24n3/Ugj9j47KRO67rvq7KPEnEDeXIJn/R/Wbe+WxWsb4XRXsDoTnXjKmWdreVZ3QbF3kPig==",
+      "type": "package",
+      "path": "square.okio/2.10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid90/Square.OkIO.dll",
+        "lib/monoandroid90/Square.OkIO.xml",
+        "lib/net6.0-android31.0/Square.OkIO.aar",
+        "lib/net6.0-android31.0/Square.OkIO.dll",
+        "lib/net6.0-android31.0/Square.OkIO.xml",
+        "square.okio.2.10.0.1.nupkg.sha512",
+        "square.okio.nuspec"
+      ]
+    },
+    "Square.Retrofit2/2.9.0": {
+      "sha512": "Vb66T5bu63ojeZlLGHtTL79Lk64idwo9xzgv3KJftHtmyeWWJL2b6WTHgDKKERgDsV6AUuCadodoXUi4G+rwwg==",
+      "type": "package",
+      "path": "square.retrofit2/2.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/monoandroid90/Square.Retrofit2.dll",
+        "lib/monoandroid90/Square.Retrofit2.xml",
+        "square.retrofit2.2.9.0.nupkg.sha512",
+        "square.retrofit2.nuspec",
+        "square.retrofit2_256x256.png"
+      ]
+    },
+    "Xamarin.Android.JakeWharton.ThreeTenAbp/1.3.1": {
+      "sha512": "SVwA1mP4iXVTLcWVxGPOOuhO5lqhBZZGbcsc43dbhBUiLHoMJSquZQum7oUuLbiIlzlr+mIXQPxxE2gexAksZA==",
+      "type": "package",
+      "path": "xamarin.android.jakewharton.threetenabp/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.dll",
+        "lib/monoandroid90/Xamarin.Android.JakeWharton.ThreeTenAbp.xml",
+        "xamarin.android.jakewharton.threetenabp.1.3.1.nupkg.sha512",
+        "xamarin.android.jakewharton.threetenabp.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Annotation/1.2.0.3": {
+      "sha512": "T3mAja69kWdjkahRAJgAMh9d0uqJq4qsNIPsYqN+v3GXT0CP6sdmpg83ELNnYovLqlXj0/sBcRrfdXXillrqzg==",
+      "type": "package",
+      "path": "xamarin.androidx.annotation/1.2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.AndroidX.Annotation.targets",
+        "build/net6.0-android31.0/Xamarin.AndroidX.Annotation.targets",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.Annotation.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Annotation.targets",
+        "jar/androidx.annotation.annotation.jar",
+        "lib/monoandroid90/Xamarin.AndroidX.Annotation.dll",
+        "lib/monoandroid90/Xamarin.AndroidX.Annotation.pdb",
+        "lib/monoandroid90/Xamarin.AndroidX.Annotation.xml",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.pdb",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.xml",
+        "xamarin.androidx.annotation.1.2.0.3.nupkg.sha512",
+        "xamarin.androidx.annotation.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Lifecycle.Common/2.3.1.3": {
+      "sha512": "/G3yDj1NBzj/Chors68h+RGzddd43hL/zsaLRfahOPBn6pg8zD7yRlY23g26ECNFQHrxcfQvCPmxP4SKWDDAGA==",
+      "type": "package",
+      "path": "xamarin.androidx.lifecycle.common/2.3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.targets",
+        "build/net6.0-android31.0/Xamarin.AndroidX.Lifecycle.Common.targets",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Lifecycle.Common.targets",
+        "jar/androidx.lifecycle.lifecycle-common.jar",
+        "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.dll",
+        "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.pdb",
+        "lib/monoandroid90/Xamarin.AndroidX.Lifecycle.Common.xml",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Lifecycle.Common.dll",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Lifecycle.Common.pdb",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Lifecycle.Common.xml",
+        "xamarin.androidx.lifecycle.common.2.3.1.3.nupkg.sha512",
+        "xamarin.androidx.lifecycle.common.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Migration/1.0.8": {
+      "sha512": "bmcoaZ0Iw4ye2VpnRl6CObw3qKZT+6RzkyHjJVaeeNOupvFGyirWUq79HdVvSWyW6xSrqTBlprmUxtQkUR4kpg==",
+      "type": "package",
+      "path": "xamarin.androidx.migration/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid90/ILRepack.dll",
+        "build/monoandroid90/Mono.Cecil.Mdb.dll",
+        "build/monoandroid90/Mono.Cecil.Pdb.dll",
+        "build/monoandroid90/Mono.Cecil.Rocks.dll",
+        "build/monoandroid90/Mono.Cecil.dll",
+        "build/monoandroid90/Tools/JetifierWrapper/jetifierWrapper-1.0.jar",
+        "build/monoandroid90/Tools/Mappings/androidx-assemblies.csv",
+        "build/monoandroid90/Tools/Mappings/androidx-class-mapping.csv",
+        "build/monoandroid90/Tools/Mappings/androidx-mapping.csv",
+        "build/monoandroid90/Tools/Mappings/dependencies.json",
+        "build/monoandroid90/Tools/Mappings/override-mapping.csv",
+        "build/monoandroid90/Xamarin.Android.Tools.Bytecode.dll",
+        "build/monoandroid90/Xamarin.AndroidX.Migration.BuildTasks.dll",
+        "build/monoandroid90/Xamarin.AndroidX.Migration.Core.dll",
+        "build/monoandroid90/Xamarin.AndroidX.Migration.props",
+        "build/monoandroid90/Xamarin.AndroidX.Migration.targets",
+        "buildTransitive/monoandroid90/ILRepack.dll",
+        "buildTransitive/monoandroid90/Mono.Cecil.Mdb.dll",
+        "buildTransitive/monoandroid90/Mono.Cecil.Pdb.dll",
+        "buildTransitive/monoandroid90/Mono.Cecil.Rocks.dll",
+        "buildTransitive/monoandroid90/Mono.Cecil.dll",
+        "buildTransitive/monoandroid90/Tools/JetifierWrapper/jetifierWrapper-1.0.jar",
+        "buildTransitive/monoandroid90/Tools/Mappings/androidx-assemblies.csv",
+        "buildTransitive/monoandroid90/Tools/Mappings/androidx-class-mapping.csv",
+        "buildTransitive/monoandroid90/Tools/Mappings/androidx-mapping.csv",
+        "buildTransitive/monoandroid90/Tools/Mappings/dependencies.json",
+        "buildTransitive/monoandroid90/Tools/Mappings/override-mapping.csv",
+        "buildTransitive/monoandroid90/Xamarin.Android.Tools.Bytecode.dll",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.BuildTasks.dll",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.Core.dll",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets",
+        "lib/monoandroid90/_._",
+        "readme.txt",
+        "xamarin.androidx.migration.1.0.8.nupkg.sha512",
+        "xamarin.androidx.migration.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.MultiDex/2.0.1.5": {
+      "sha512": "dnJNwpS0+iFA3q5i74Oo3LSdjab1iAWNbax9fWYgnuVBtTUMfJnV7uuzHWnurcWGGyxkMQzzi6BjC/znxNpG1Q==",
+      "type": "package",
+      "path": "xamarin.androidx.multidex/2.0.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "aar/androidx.multidex.multidex.aar",
+        "build/monoandroid90/Xamarin.AndroidX.MultiDex.targets",
+        "buildTransitive/monoandroid90/Xamarin.AndroidX.MultiDex.targets",
+        "lib/monoandroid90/Xamarin.AndroidX.MultiDex.dll",
+        "lib/monoandroid90/Xamarin.AndroidX.MultiDex.pdb",
+        "xamarin.androidx.multidex.2.0.1.5.nupkg.sha512",
+        "xamarin.androidx.multidex.nuspec"
+      ]
+    },
+    "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+      "sha512": "3LnLpigkzYNE0dZrPI6SZBK9/4M9DIR5P0fqIS6aYa2HX8VJFMZPyGM+rweFMfAb+j2A37jvpjtjuTIXuS3tew==",
+      "type": "package",
+      "path": "xamarin.jetbrains.annotations/22.0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.Jetbrains.Annotations.targets",
+        "build/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets",
+        "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets",
+        "jar/org.jetbrains.annotations.jar",
+        "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll",
+        "lib/monoandroid90/Xamarin.Jetbrains.Annotations.xml",
+        "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll",
+        "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.xml",
+        "xamarin.jetbrains.annotations.22.0.0.2.nupkg.sha512",
+        "xamarin.jetbrains.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib/1.5.31.2": {
+      "sha512": "WbZwXA64yj4P2EpzX0kzB0eVBzvGr1KbQv5Jy2k0bYgK2BIAIhzyYPwhtn4kxwedeqsJYMwHyvEo5lByqw+0/w==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib/1.5.31.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.Kotlin.StdLib.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
+        "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib.jar",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.xml",
+        "xamarin.kotlin.stdlib.1.5.31.2.nupkg.sha512",
+        "xamarin.kotlin.stdlib.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+      "sha512": "yf6HGis1l0FXIzIvhSPRnVMxegt+ldjXFHUNLjdjrX9RQkRNyBYIZt2mBn7PlbdcN7M5BjE6zAt7/jKVs03SxA==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib.common/1.5.31.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-common.jar",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.xml",
+        "xamarin.kotlin.stdlib.common.1.5.31.2.nupkg.sha512",
+        "xamarin.kotlin.stdlib.common.nuspec"
+      ]
+    },
+    "CommunicationCore/1.0.0": {
+      "type": "project",
+      "path": "../../CommunicationCore/CommunicationCore/CommunicationCore.csproj",
+      "msbuildProject": "../../CommunicationCore/CommunicationCore/CommunicationCore.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "MonoAndroid,Version=v11.0": [
+      "CommunicationCore >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/joshualai/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCommon/CommunicationCommon/CommunicationCommon.csproj",
+      "projectName": "CommunicationCommon",
+      "projectPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCommon/CommunicationCommon/CommunicationCommon.csproj",
+      "packagesPath": "/Users/joshualai/.nuget/packages/",
+      "outputPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCommon/CommunicationCommon/obj/",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "/Users/joshualai/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "monoandroid11.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "monoandroid11.0": {
+          "projectReferences": {
+            "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/CommunicationCore.csproj": {
+              "projectPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/CommunicationCore.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "monoandroid11.0": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

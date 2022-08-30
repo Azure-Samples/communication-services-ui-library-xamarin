@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/CommunicationCore.csproj": {}
+  },
+  "projects": {
+    "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/CommunicationCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/CommunicationCore.csproj",
+        "projectName": "CommunicationCore",
+        "projectPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/CommunicationCore.csproj",
+        "packagesPath": "/Users/joshualai/.nuget/packages/",
+        "outputPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamarinAndroidBindings/CommunicationCore/CommunicationCore/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/joshualai/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid11.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid11.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid11.0": {
+          "dependencies": {
+            "Square.OkHttp3": {
+              "target": "Package",
+              "version": "[4.9.2.1, )"
+            },
+            "Square.Retrofit2": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "Xamarin.Android.JakeWharton.ThreeTenAbp": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.AndroidX.Annotation": {
+              "target": "Package",
+              "version": "[1.2.0.3, )"
+            },
+            "Xamarin.AndroidX.Lifecycle.Common": {
+              "target": "Package",
+              "version": "[2.3.1.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

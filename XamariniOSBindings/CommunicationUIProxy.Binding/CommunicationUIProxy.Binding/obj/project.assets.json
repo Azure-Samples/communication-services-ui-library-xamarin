@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": []
+  },
+  "packageFolders": {
+    "/Users/joshualai/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamariniOSBindings/CommunicationUIProxy.Binding/CommunicationUIProxy.Binding/CommunicationUIProxy.Binding.csproj",
+      "projectName": "NativeLibrary",
+      "projectPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamariniOSBindings/CommunicationUIProxy.Binding/CommunicationUIProxy.Binding/CommunicationUIProxy.Binding.csproj",
+      "packagesPath": "/Users/joshualai/.nuget/packages/",
+      "outputPath": "/Users/joshualai/Documents/code/azure/communication-services-ui-library-xamarin-hero-pr/XamariniOSBindings/CommunicationUIProxy.Binding/CommunicationUIProxy.Binding/obj/",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "/Users/joshualai/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {}
+    }
+  }
+}
