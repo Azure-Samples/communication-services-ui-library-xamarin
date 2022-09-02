@@ -1,6 +1,0 @@
-framework module Pods_CommunicationUI_Proxy {
-  umbrella header "Pods-CommunicationUI-Proxy-umbrella.h"
-
-  export *
-  module * { export * }
-}
