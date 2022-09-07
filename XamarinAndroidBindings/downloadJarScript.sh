@@ -1,6 +1,13 @@
 #!/bin/bash
 
-cd CommunicationUILibrary/CommunicationUILibrary
+
+if [ ! -d CommunicationCallingXamarinSampleApp ]; then
+  cd .. 
+fi
+
+
+cd XamarinAndroidBindings/CommunicationUILibrary/CommunicationUILibrary
+
 
 if [ ! -d "$Jars" ]; then
   mkdir Jars
