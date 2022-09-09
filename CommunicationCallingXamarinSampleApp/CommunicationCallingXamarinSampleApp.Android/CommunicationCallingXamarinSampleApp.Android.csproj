@@ -193,9 +193,6 @@
     <AndroidAarLibrary Include="aar\fluentui_drawer-0.0.20.aar">
       <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
     </AndroidAarLibrary>
-    <AndroidAarLibrary Include="aar\dualscreen-layout-1.0.0-alpha01.aar">
-      <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
-    </AndroidAarLibrary>
     <AndroidAarLibrary Include="aar\fluentui_listitem-0.0.20.aar">
       <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
     </AndroidAarLibrary>
