@@ -23,6 +23,22 @@ Clone repo and open `CommunicationCallingXamarinSampleApp.sln` in Visual Studio
 
 #### For Android
 
+Run `downloadJarScript.sh` and all the required jar/aar's will be downloaded in their specific folders.
+After cloning repo, open terminal and navigate to the `XamarinAndroidBindings` folder and run the following command:
+
+### Windows
+
+Windows users can use powershell and run the script as an administator.
+
+```cs
+./downloadJarScript.sh
+```
+
+### Mac
+```cs
+chmod +x downloadJarScript.sh && ./downloadJarScript.sh
+```
+
 Set `CommunicationCallingXamarinSampleApp.Android` as start up project, build solution and select a device or emulator to run application.
 
 #### For iOS
