@@ -24,7 +24,7 @@ Clone repo and open `CommunicationCallingXamarinSampleApp.sln` in Visual Studio
 #### For Android
 1. Navigate to `/XamarinAndroidBindings/` and in this directory in terminal run `sh downloadJarScript` [Learn More](XamarinAndroidBindings/README.md#download-jarsaars)
 
-Set `CommunicationCallingXamarinSampleApp.Android` as start up project, build solution and select a device or emulator to run application.
+2. Set `CommunicationCallingXamarinSampleApp.Android` as start up project, build solution and select a device or emulator to run application.
 
 #### For iOS
 1. Navigate to `/XamariniOSBindings/ProxyLibs/CommunicationUI-Proxy` and in this directory in terminal run `sh iOSFramework -d` [Learn More](https://github.com/Azure-Samples/communication-services-ui-library-xamarin/tree/refactor/cleanup/XamariniOSBindings#create-frameworks)
