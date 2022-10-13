@@ -33,11 +33,11 @@ UNIVERSAL_OUTPUTFOLDER=$(PWD)/'Framework'/${CONFIGURATION}'-universal'
 mkdir -p "${UNIVERSAL_OUTPUTFOLDER}"
 
 # Copy Device(arm64) Framework at fresh universal folder location 
-cp -a $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'CommunicationUI_Proxy.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
-cp -a $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'AzureCommunicationCommon'/'AzureCommunicationCommon.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
-cp -a $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'AzureCommunicationUICalling'/'AzureCommunicationUICalling.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
-cp -a $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'MicrosoftFluentUI'/'FluentUI.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
-cp -a $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'XCFrameworkIntermediates'/'AzureCommunicationCalling'/'AzureCommunicationCalling.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
+cp -af $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'CommunicationUI_Proxy.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
+cp -af $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'AzureCommunicationCommon'/'AzureCommunicationCommon.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
+cp -af $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'AzureCommunicationUICalling'/'AzureCommunicationUICalling.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
+cp -af $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'MicrosoftFluentUI'/'FluentUI.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
+cp -af $(PWD)/'SimulatorFramework'/${CONFIGURATION}'-iphonesimulator'/'XCFrameworkIntermediates'/'AzureCommunicationCalling'/'AzureCommunicationCalling.framework' "${UNIVERSAL_OUTPUTFOLDER}/"
 
 # Create universal binary file using lipo and place the combined executable in the copied framework directory
 lipo -create "$(PWD)/SimulatorFramework/${CONFIGURATION}-iphonesimulator/CommunicationUI_Proxy.framework/CommunicationUI_Proxy" "$(PWD)/DeviceFramework/${CONFIGURATION}-iphoneos/CommunicationUI_Proxy.framework/CommunicationUI_Proxy" -output "${UNIVERSAL_OUTPUTFOLDER}/CommunicationUI_Proxy.framework/CommunicationUI_Proxy"
