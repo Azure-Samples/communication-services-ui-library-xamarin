@@ -29,8 +29,6 @@ Set `CommunicationCallingXamarinSampleApp.Android` as start up project, build so
 #### For iOS
 1. Navigate to `/XamariniOSBindings/ProxyLibs/CommunicationUI-Proxy` and in this directory in terminal run `sh iOSFramework -d` [Learn More](https://github.com/Azure-Samples/communication-services-ui-library-xamarin/tree/refactor/cleanup/XamariniOSBindings#create-frameworks)
 2. Next navigate to `/XamariniOSBindings/CommunicationUIProxy.Binding` and build the `CommunicationUIProxy.Binding.sln`.  This will generate `CommunicationUIProxy.Binding\bin` folder where it will have `NativeLibrary.dll` for you to use. 
-3. Open `CommunicationCallingXamarinSampleApp.sln`. Under the `CommunicationCallingXamarinSampleApp.iOS/References` right click and `Add Reference`. 
-4. In the `.Net Assembly` tab we can browse to where the `.dll` of our binding library and add it as a reference. 
 
 Set `CommunicationCallingXamarinSampleApp.iOS` as start up project, build, and select a device or emulator to run application.
 
