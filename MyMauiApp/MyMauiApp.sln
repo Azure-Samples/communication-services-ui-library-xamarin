@@ -5,13 +5,15 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMauiApp", "MyMauiApp.csproj", "{A0FCA63F-EDC0-4F19-BF30-433E7E2939E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure_log_binding", "..\MAUIAndroidBindings\azure_log_binding\azure_log_binding.csproj", "{DAC45810-201F-43C2-84B0-724F26A8A432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "azure_log_binding", "..\MAUIAndroidBindings\azure_log_binding\azure_log_binding.csproj", "{DAC45810-201F-43C2-84B0-724F26A8A432}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure_core_binding", "..\MAUIAndroidBindings\azure_core_binding\azure_core_binding.csproj", "{BEAD8521-FA75-411D-985D-B255BC4B03B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "azure_core_binding", "..\MAUIAndroidBindings\azure_core_binding\azure_core_binding.csproj", "{BEAD8521-FA75-411D-985D-B255BC4B03B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure_common_binding", "..\MAUIAndroidBindings\azure_common_binding\azure_common_binding.csproj", "{CE5E9364-F732-414D-8D39-8C21C77EA93F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "azure_common_binding", "..\MAUIAndroidBindings\azure_common_binding\azure_common_binding.csproj", "{CE5E9364-F732-414D-8D39-8C21C77EA93F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acs_ui_library_calling_binding", "..\MAUIAndroidBindings\acs_ui_library_calling_binding\acs_ui_library_calling_binding.csproj", "{2C2EDA65-5775-4B66-87B8-8E7C7D32036A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "acs_ui_library_calling_binding", "..\MAUIAndroidBindings\acs_ui_library_calling_binding\acs_ui_library_calling_binding.csproj", "{2C2EDA65-5775-4B66-87B8-8E7C7D32036A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iOS.CallingUI.Binding", "..\MAUIiOSBindings\iOS.CallingUI.Binding\iOS.CallingUI.Binding.csproj", "{D531D930-B6CD-4B54-A63B-808C86593969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{2C2EDA65-5775-4B66-87B8-8E7C7D32036A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C2EDA65-5775-4B66-87B8-8E7C7D32036A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C2EDA65-5775-4B66-87B8-8E7C7D32036A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D531D930-B6CD-4B54-A63B-808C86593969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D531D930-B6CD-4B54-A63B-808C86593969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D531D930-B6CD-4B54-A63B-808C86593969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D531D930-B6CD-4B54-A63B-808C86593969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
