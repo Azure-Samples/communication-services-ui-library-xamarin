@@ -20,7 +20,7 @@ public partial class MainPage : ContentPage
 		string name = "";
 		string acsToken = "";
 		string callId = "";
-		bool isTeamsCall = true;
+		bool isTeamsCall = false;
 		composite.JoinCall(name, acsToken, callId, isTeamsCall);
 	}
 }
