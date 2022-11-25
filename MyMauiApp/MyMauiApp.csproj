@@ -64,6 +64,10 @@
 	    <HintPath>..\MAUIiOSBindings\iOS.CallingUI.Binding\bin\Debug\net7.0-ios\iOS.CallingUI.Binding.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
+		<ProjectReference Include="..\MAUIiOSBindings\iOS.CallingUI.Binding\iOS.CallingUI.Binding.csproj" />
+	</ItemGroup>
+	
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
 		<PackageReference Include="Xamarin.AndroidX.DataBinding.ViewBinding" Version="7.0.3">
 		</PackageReference>
