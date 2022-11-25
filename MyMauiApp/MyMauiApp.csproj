@@ -67,7 +67,7 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Reference Include="iOS.CallingUI.Binding">
-	    <HintPath>..\iOS.CallingUI.Binding\bin\Debug\net7.0-ios\iOS.CallingUI.Binding.dll</HintPath>
+	    <HintPath>..\MAUIiOSBindings\iOS.CallingUI.Binding\bin\Debug\net7.0-ios\iOS.CallingUI.Binding.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 </Project>
