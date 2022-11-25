@@ -6,7 +6,7 @@ if [ ! -d CommunicationCallingXamarinSampleApp ]; then
 fi
 
 
-cd XamarinAndroidBindings/CommunicationUILibrary/CommunicationUILibrary
+cd MAUIAndroidBindings/acs_ui_library_calling_binding
 
 
 if [ ! -d "$Jars" ]; then
@@ -19,11 +19,26 @@ echo "Downloading CommunicationUILibrary Jars"
 curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-communication-ui-calling/1.0.0/azure-communication-ui-calling-1.0.0.aar" --output azure-communication-ui-calling-1.0.0.aar
 
 echo "CommunicationUILibrary Jars Download Complete"
-cd ../../..
+cd ../../
+
+cd azure_log_binding
+
+
+if [ ! -d "$Jars" ]; then
+  mkdir Jars
+fi
+
+cd Jars
+
+echo "Downloading log Jars"
+curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-core-logging/1.0.0-beta.9/azure-core-logging-1.0.0-beta.9.aar" --output azure-core-logging-1.0.0-beta.9.aar
+
+echo "log Jars Download Complete"
+cd ../../
 
 echo "Downloading CommunicationCore Jars"
 
-cd CommunicationCore/CommunicationCore
+cd azure_core_binding
 
 if [ ! -d "$Jars" ]; then
   mkdir Jars
@@ -39,9 +54,9 @@ curl -0 -L "https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jack
 curl -0 -L "https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.2/jackson-module-jaxb-annotations-2.11.2.jar" --output jackson-module-jaxb-annotations-2.11.2.jar
 echo "CommunicationCore Jars Download Complete"
 
-cd ../../..
+cd ../../
 echo "Downloading CommunicationCommon Jars"
-cd CommunicationCommon/CommunicationCommon
+cd azure_common_binding
 
 if [ ! -d "$Jars" ]; then
   mkdir Jars
@@ -57,9 +72,9 @@ curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-core-logging/
 echo "CommunicationCommon Jars Download Complete"
 echo "Downloading aars..."
 
-cd ../../../..
+cd ../../../
 
-cd CommunicationCallingXamarinSampleApp/CommunicationCallingXamarinSampleApp.Android
+cd MyMauiApp
 
 if [ ! -d "$aar" ]; then
   mkdir aar
@@ -68,7 +83,6 @@ fi
 cd aar
 
 curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-communication-calling/2.2.0/azure-communication-calling-2.2.0.aar" --output azure-communication-calling-2.2.0.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-core-logging/1.0.0-beta.9/azure-core-logging-1.0.0-beta.9.aar" --output azure-core-logging-1.0.0-beta.9.aar
 curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_core/0.0.20/fluentui_core-0.0.20.aar" --output fluentui_core-0.0.20.aar
 curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_drawer/0.0.20/fluentui_drawer-0.0.20.aar" --output fluentui_drawer-0.0.20.aar
 curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_listitem/0.0.20/fluentui_listitem-0.0.20.aar" --output fluentui_listitem-0.0.20.aar
