@@ -1,5 +1,10 @@
-﻿using MyMauiApp.Platforms.iOS;
+﻿#if ANDROID
+using MyMauiApp.Platforms.Android;
+#elif IOS
+using MyMauiApp.Platforms.iOS;
+#endif
 using System;
+
 namespace MyMauiApp;
 
 public partial class MainPage : ContentPage

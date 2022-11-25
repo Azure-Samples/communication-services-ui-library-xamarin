@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-ios16.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android</TargetFrameworks>
 		<!-- <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks> -->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
@@ -28,19 +28,13 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<TargetFramework>net7.0-ios16.0</TargetFramework>
+		<!--<TargetFramework>net7.0-ios16.0</TargetFramework>-->
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='net7.0-ios'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios16.0|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios16.0|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='net7.0-ios16.0'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<ItemGroup>
@@ -65,9 +59,43 @@
 	<ItemGroup>
 	  <None Remove="iOS.CallingUI.Binding" />
 	</ItemGroup>
-	<ItemGroup>
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 	  <Reference Include="iOS.CallingUI.Binding">
 	    <HintPath>..\MAUIiOSBindings\iOS.CallingUI.Binding\bin\Debug\net7.0-ios\iOS.CallingUI.Binding.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<PackageReference Include="Xamarin.AndroidX.DataBinding.ViewBinding" Version="7.0.3">
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+	  <ProjectReference Include="..\MAUIAndroidBindings\acs_ui_library_calling_binding\acs_ui_library_calling_binding.csproj" />
+	  <ProjectReference Include="..\MAUIAndroidBindings\azure_common_binding\azure_common_binding.csproj" />
+	  <ProjectReference Include="..\MAUIAndroidBindings\azure_core_binding\azure_core_binding.csproj" />
+	  <ProjectReference Include="..\MAUIAndroidBindings\azure_log_binding\azure_log_binding.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<AndroidAarLibrary Include="aar\fluentui_drawer-0.0.20.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+		<AndroidAarLibrary Include="aar\fluentui_listitem-0.0.20.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+		<AndroidAarLibrary Include="aar\fluentui_core-0.0.20.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+		<AndroidAarLibrary Include="aar\fluentui_others-0.0.20.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+		<AndroidAarLibrary Include="aar\fluentui_transients-0.0.20.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+		<AndroidAarLibrary Include="aar\fluentui_persona-0.0.20.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+		<AndroidAarLibrary Include="aar\azure-communication-calling-2.2.0.aar">
+		  <AndroidSkipResourceProcessing></AndroidSkipResourceProcessing>
+		</AndroidAarLibrary>
+  </ItemGroup>
 </Project>
