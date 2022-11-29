@@ -10,8 +10,6 @@
 		2E2657BEE98B963DEB433B26 /* Pods_CommunicationUI_Proxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C5DDD3CB912E342D82DB69 /* Pods_CommunicationUI_Proxy.framework */; };
 		88987F702787944A00F8F3AC /* CommunicationUI_Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 88987F6F2787944A00F8F3AC /* CommunicationUI_Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88987F77278794EC00F8F3AC /* CommunicationUIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88987F76278794EC00F8F3AC /* CommunicationUIProxy.swift */; };
-		948D41847B0A81F824F39A4E /* Pods_CommunicationUI_Proxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C5DDD3CB912E342D82DB69 /* Pods_CommunicationUI_Proxy.framework */; };
-		D70223983A1631B49F2E4FD6 /* Pods_CommunicationUI_Proxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C5DDD3CB912E342D82DB69 /* Pods_CommunicationUI_Proxy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +27,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2657BEE98B963DEB433B26 /* Pods_CommunicationUI_Proxy.framework in Frameworks */,
-				D70223983A1631B49F2E4FD6 /* Pods_CommunicationUI_Proxy.framework in Frameworks */,
-				948D41847B0A81F824F39A4E /* Pods_CommunicationUI_Proxy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +117,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					88987F6B2787944A00F8F3AC = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -249,7 +245,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

@@ -1,4 +1,5 @@
 using System;
+using CommunicationUI_Proxy;
 using Foundation;
 using ObjCRuntime;
 using UIKit;
@@ -26,9 +27,13 @@ namespace Xam.CommunicationUIProxy.iOS
 		[NullAllowed, Export ("personaData", ArgumentSemantic.Strong)]
 		CommunicationPersonaDataProxy PersonaData { get; set; }
 
-		// -(void)setLocalDataOptionProperties:(CommunicationPersonaDataProxy * _Nonnull)personaData;
-		[Export ("setLocalDataOptionProperties:")]
-		void SetLocalDataOptionProperties (CommunicationPersonaDataProxy personaData);
+		// @property (nonatomic, strong) CommunicationSetupScreenViewDataProxy * _Nullable setupScreenViewData;
+		[NullAllowed, Export ("setupScreenViewData", ArgumentSemantic.Strong)]
+		CommunicationSetupScreenViewDataProxy SetupScreenViewData { get; set; }
+
+		// -(void)setLocalDataOptionProperties:(CommunicationPersonaDataProxy * _Nullable)personaData setupScreenViewData:(CommunicationSetupScreenViewDataProxy * _Nullable)setupScreenViewData;
+		[Export ("setLocalDataOptionProperties:setupScreenViewData:")]
+		void SetLocalDataOptionProperties ([NullAllowed] CommunicationPersonaDataProxy personaData, [NullAllowed] CommunicationSetupScreenViewDataProxy setupScreenViewData);
 	}
 
 	// @interface CommunicationLocalizationProxy : NSObject
@@ -65,6 +70,23 @@ namespace Xam.CommunicationUIProxy.iOS
 		void SetPersonaDataProperties ([NullAllowed] UIImage avatarImage, string renderDisplayName);
 	}
 
+	// @interface CommunicationSetupScreenViewDataProxy : NSObject
+	[BaseType (typeof(NSObject), Name = "_TtC21CommunicationUI_Proxy37CommunicationSetupScreenViewDataProxy")]
+	interface CommunicationSetupScreenViewDataProxy
+	{
+		// @property (copy, nonatomic) NSString * _Nonnull title;
+		[Export ("title")]
+		string Title { get; set; }
+
+		// @property (copy, nonatomic) NSString * _Nullable subtitle;
+		[NullAllowed, Export ("subtitle")]
+		string Subtitle { get; set; }
+
+		// -(void)setSetupScreenViewDataProperties:(NSString * _Nonnull)title subtitle:(NSString * _Nullable)subtitle;
+		[Export ("setSetupScreenViewDataProperties:subtitle:")]
+		void SetSetupScreenViewDataProperties (string title, [NullAllowed] string subtitle);
+	}
+
 	// @interface CommunicationThemeProxy : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC21CommunicationUI_Proxy23CommunicationThemeProxy")]
 	interface CommunicationThemeProxy
@@ -92,6 +114,7 @@ namespace Xam.CommunicationUIProxy.iOS
 
 		// -(NSArray<NSString *> * _Nonnull)getAvailableLanguages __attribute__((warn_unused_result("")));
 		[Export ("getAvailableLanguages")]
+		[Verify (MethodToProperty)]
 		string[] AvailableLanguages { get; }
 	}
 
