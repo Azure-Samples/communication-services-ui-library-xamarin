@@ -32,5 +32,7 @@
 	<string>Camera is needed</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Mic is needed</string>
+	<key>MinimumOSVersion</key>
+	<string>14.3</string>
 </dict>
 </plist>
