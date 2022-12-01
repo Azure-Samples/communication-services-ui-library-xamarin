@@ -1,5 +1,4 @@
 using System;
-using CommunicationUI_Proxy;
 using Foundation;
 using ObjCRuntime;
 using UIKit;
@@ -114,7 +113,6 @@ namespace Xam.CommunicationUIProxy.iOS
 
 		// -(NSArray<NSString *> * _Nonnull)getAvailableLanguages __attribute__((warn_unused_result("")));
 		[Export ("getAvailableLanguages")]
-		[Verify (MethodToProperty)]
 		string[] AvailableLanguages { get; }
 	}
 
