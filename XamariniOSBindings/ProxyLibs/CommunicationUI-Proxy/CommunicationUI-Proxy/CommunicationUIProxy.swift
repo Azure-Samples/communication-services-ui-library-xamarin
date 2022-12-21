@@ -42,11 +42,25 @@ public class CommunicationPersonaDataProxy: NSObject {
 }
 
 @objcMembers
+public class CommunicationSetupScreenViewDataProxy: NSObject {
+    public var title: String = ""
+    public var subtitle: String? = ""
+
+    public func setSetupScreenViewDataProperties(_ title: String, subtitle: String?) {
+        self.title = title
+        self.subtitle = subtitle
+    }
+}
+
+@objcMembers
 public class CommunicationLocalDataOptionProxy: NSObject {
     public var personaData: CommunicationPersonaDataProxy? = nil
+    public var setupScreenViewData: CommunicationSetupScreenViewDataProxy? = nil
 
-    public func setLocalDataOptionProperties(_ personaData: CommunicationPersonaDataProxy) {
+    public func setLocalDataOptionProperties(_ personaData: CommunicationPersonaDataProxy? = nil,
+                                             setupScreenViewData: CommunicationSetupScreenViewDataProxy? = nil) {
         self.personaData = personaData
+        self.setupScreenViewData = setupScreenViewData
     }
 }
 
@@ -242,7 +256,12 @@ extension CommunicationUIProxy {
         let renderDisplayName = localDataOptionsProxy.personaData?.renderDisplayName
         let persona: ParticipantViewData = ParticipantViewData(avatar: avatar, displayName: renderDisplayName)
 
-        return LocalOptions(participantViewData: persona)
+        let title = localDataOptionsProxy.setupScreenViewData?.title ?? ""
+        let subtitle = localDataOptionsProxy.setupScreenViewData?.subtitle
+        let setupViewData: SetupScreenViewData = SetupScreenViewData(title: title, subtitle: subtitle)
+        
+        return LocalOptions(participantViewData: persona,
+                            setupScreenViewData: setupViewData)
     }
 }
 

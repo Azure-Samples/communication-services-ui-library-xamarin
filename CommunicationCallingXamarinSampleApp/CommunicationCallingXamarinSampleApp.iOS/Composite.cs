@@ -29,7 +29,7 @@ namespace CommunicationCallingXamarinSampleApp.iOS
                 UIImage avatar = UIImage.FromBundle(dataModelInjection.Value.localAvatar);
                 CommunicationPersonaDataProxy personaDataProxy = new CommunicationPersonaDataProxy();
                 personaDataProxy.SetPersonaDataProperties(avatar, name);
-                localDataOption.SetLocalDataOptionProperties(personaDataProxy);
+                localDataOption.SetLocalDataOptionProperties(personaDataProxy, null);
             }
 
             if (isTeamsCall)
