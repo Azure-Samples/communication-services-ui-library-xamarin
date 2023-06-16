@@ -67,14 +67,14 @@ fi
 
 cd aar
 
-curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-communication-calling/2.2.0/azure-communication-calling-2.2.0.aar" --output azure-communication-calling-2.2.0.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-communication-calling/2.2.0/azure-communication-calling-2.2.1.aar" --output azure-communication-calling-2.2.1.aar
 curl -0 -L "https://repo1.maven.org/maven2/com/azure/android/azure-core-logging/1.0.0-beta.9/azure-core-logging-1.0.0-beta.9.aar" --output azure-core-logging-1.0.0-beta.9.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_core/0.0.20/fluentui_core-0.0.20.aar" --output fluentui_core-0.0.20.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_drawer/0.0.20/fluentui_drawer-0.0.20.aar" --output fluentui_drawer-0.0.20.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_listitem/0.0.20/fluentui_listitem-0.0.20.aar" --output fluentui_listitem-0.0.20.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_others/0.0.20/fluentui_others-0.0.20.aar" --output fluentui_others-0.0.20.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_persona/0.0.20/fluentui_persona-0.0.20.aar" --output fluentui_persona-0.0.20.aar
-curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_transients/0.0.20/fluentui_transients-0.0.20.aar" --output fluentui_transients-0.0.20.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_core/0.0.20/fluentui_core-0.0.21.aar" --output fluentui_core-0.0.21.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_drawer/0.0.20/fluentui_drawer-0.0.21.aar" --output fluentui_drawer-0.0.21.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_listitem/0.0.20/fluentui_listitem-0.0.21.aar" --output fluentui_listitem-0.0.21.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_others/0.0.20/fluentui_others-0.0.21.aar" --output fluentui_others-0.0.21.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_persona/0.0.20/fluentui_persona-0.0.21.aar" --output fluentui_persona-0.0.21.aar
+curl -0 -L "https://repo1.maven.org/maven2/com/microsoft/fluentui/fluentui_transients/0.0.20/fluentui_transients-0.0.21.aar" --output fluentui_transients-0.0.21.aar
 curl -0 -L "https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1/com/microsoft/device/dualscreen-layout/1.0.0-alpha01/dualscreen-layout-1.0.0-alpha01.aar" --output dualscreen-layout-1.0.0-alpha01.aar
 
 echo "All required jars/aars downloaded"
