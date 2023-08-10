@@ -221,7 +221,6 @@ namespace CommunicationCallingXamarinSampleApp.Droid
                 {
                     var dismissedEvent = eventArgs as CallCompositeDismissedEvent;
                     Console.WriteLine("CallCompositeDismissedEvent");
-                    Console.WriteLine(dismissedEvent.ErrorCode.ToString());
                 }
             }
 
