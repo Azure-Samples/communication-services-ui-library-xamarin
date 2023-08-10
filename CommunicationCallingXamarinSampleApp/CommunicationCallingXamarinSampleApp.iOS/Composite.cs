@@ -60,7 +60,7 @@ namespace CommunicationCallingXamarinSampleApp.iOS
         {
             if (!(_dataModelInjection is null))
             {
-                foreach (NSString rawId in rawIds)
+                foreach (NSString rawId in rawIds.ToArray())
                 {
                     CommunicationPersonaDataProxy participantOption = new CommunicationPersonaDataProxy();
                     UIImage avatar = UIImage.FromBundle(_dataModelInjection.Value.remoteAvatar);
