@@ -147,9 +147,6 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
-    <Reference Include="NativeLibrary">
-      <HintPath>..\..\XamariniOSBindings\CommunicationUIProxy.Binding\CommunicationUIProxy.Binding\bin\Debug\NativeLibrary.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
@@ -160,6 +157,9 @@
     <ProjectReference Include="..\CommunicationCallingXamarinSampleApp\CommunicationCallingXamarinSampleApp.csproj">
       <Project>{0BA4715C-974F-459C-8366-81A726E4A57E}</Project>
       <Name>CommunicationCallingXamarinSampleApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XamariniOSBindings\CommunicationUIProxy.Binding\CommunicationUIProxy.Binding\CommunicationUIProxy.Binding.csproj">
+      <Name>CommunicationUIProxy.Binding</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

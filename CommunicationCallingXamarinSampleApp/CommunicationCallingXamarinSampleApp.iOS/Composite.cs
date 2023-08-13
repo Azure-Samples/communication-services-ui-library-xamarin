@@ -36,14 +36,40 @@ namespace CommunicationCallingXamarinSampleApp.iOS
             {
                 TeamsMeetingObjectProxy _teamsMeetingObject = new TeamsMeetingObjectProxy();
                 _teamsMeetingObject.SetTeamsMeetingsProperties(callID, name);
-                _p.StartExperienceWithTeamsMeeting(teamsMeeting: _teamsMeetingObject, token: acsToken, localData: localDataOption, theme: null, localization: localizationProxy, errorCallback: null, onRemoteParticipantJoinedCallback: null);
+                _p.StartExperienceWithTeamsMeeting(teamsMeeting: _teamsMeetingObject, 
+                token: acsToken, 
+                localData: localDataOption, 
+                theme: null, 
+                localization: localizationProxy, 
+                errorCallback: null, 
+                onRemoteParticipantJoinedCallback: null,
+                (callstate) => onCallStateChanged(callstate),
+                (exited) => onExited(exited));
             }
             else
             {
                 GroupCallObjectProxy _groupCallObject = new GroupCallObjectProxy();
                 _groupCallObject.SetGroupCallProperties(callID, name);
-                _p.StartExperienceWithGroupCall(_groupCallObject, acsToken, localDataOption, null, localizationProxy, (error) => handleError(error), (rawIds) => onRemoteParticipant(rawIds));
+                _p.StartExperienceWithGroupCall(_groupCallObject,
+                    acsToken,
+                    localDataOption,
+                    null,
+                    localizationProxy,
+                    (error) => handleError(error),
+                    (rawIds) => onRemoteParticipant(rawIds),
+                    (callstate) => onCallStateChanged(callstate),
+                    (exited)=> onExited(exited));
             }
+        }
+
+        private void onExited(CommunicationExitProxy exited)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void onCallStateChanged(CommunicationCallStateProxy callstate)
+        {
+            throw new NotImplementedException();
         }
 
         public List<String> languages()
