@@ -64,12 +64,13 @@ namespace CommunicationCallingXamarinSampleApp.iOS
 
         private void onExited(CommunicationExitProxy exited)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("onExited " + exited.Code);
         }
 
         private void onCallStateChanged(CommunicationCallStateProxy callstate)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("CallStateCode " + _p?.CallStateCode);
+            Console.WriteLine("onCallStateChanged " + callstate.Code);
         }
 
         public List<String> languages()
