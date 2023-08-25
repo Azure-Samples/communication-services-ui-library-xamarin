@@ -21,6 +21,7 @@ namespace CommunicationCallingXamarinSampleApp
         LocalizationProps _localization;
         DataModelInjectionProps _dataModelInjection;
         OrientationProps _orientationProps;
+        CallControlProps _callControlProps;
 
         public JoinCallPage()
         {
@@ -37,6 +38,11 @@ namespace CommunicationCallingXamarinSampleApp
             _orientationProps = new OrientationProps();
             _orientationProps.setupScreenOrientation = "PORTRAIT";
             _orientationProps.callScreenOrientation = "USER";
+
+            _callControlProps = new CallControlProps();
+            _callControlProps.isSkipSetupON = false;
+            _callControlProps.isMicrophoneON = false;
+            _callControlProps.isCameraON = false;
         }
 
         async void OnToolbarClicked(object sender, EventArgs e)
@@ -46,11 +52,12 @@ namespace CommunicationCallingXamarinSampleApp
             await Navigation.PushModalAsync(settingsPage, true);
         }
 
-        void ProcessSettings(LocalizationProps localization, DataModelInjectionProps dataModelInjection, OrientationProps orientationProps)
+        void ProcessSettings(LocalizationProps localization, DataModelInjectionProps dataModelInjection, OrientationProps orientationProps, CallControlProps callControlProps)
         {
             _localization = localization;
             _dataModelInjection = dataModelInjection;
             _orientationProps = orientationProps;
+            _callControlProps = callControlProps;
             Console.WriteLine("locale is " + localization.locale + " isLeftToRight is " + localization.isLeftToRight);
         }
 
@@ -88,7 +95,7 @@ namespace CommunicationCallingXamarinSampleApp
         {
             if (!String.IsNullOrEmpty(tokenEntry.Text) && !String.IsNullOrEmpty(meetingEntry.Text))
             {
-                callComposite.joinCall(name.Text, tokenEntry.Text, meetingEntry.Text, isTeamsCall, _localization, _dataModelInjection, _orientationProps);
+                callComposite.joinCall(name.Text, tokenEntry.Text, meetingEntry.Text, isTeamsCall, _localization, _dataModelInjection, _orientationProps, _callControlProps);
             }
         }
 

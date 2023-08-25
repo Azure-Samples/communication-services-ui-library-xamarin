@@ -5,7 +5,7 @@ namespace CommunicationCallingXamarinSampleApp
 {
     public partial class SettingsPage : ContentPage
     {
-        public delegate void ProcessSettingsCallback(LocalizationProps localization, DataModelInjectionProps dataModelInjection, OrientationProps orientationProps);
+        public delegate void ProcessSettingsCallback(LocalizationProps localization, DataModelInjectionProps dataModelInjection, OrientationProps orientationProps, CallControlProps callControlProps);
         public event ProcessSettingsCallback Callback;
 
         String localAvatarName = "";
@@ -51,6 +51,21 @@ namespace CommunicationCallingXamarinSampleApp
             leftToRightToggle.IsToggled = e.Value;
         }
 
+        void OnSkipSetupToggled(object sender, ToggledEventArgs e)
+        {
+            skipSetupScreenToggle.IsToggled = e.Value;
+        }
+
+        void OnMicOnToggled(object sender, ToggledEventArgs e)
+        {
+            onMicrophoneOnToggle.IsToggled = e.Value;
+        }
+
+        void OnCameraOnToggled(object sender, ToggledEventArgs e)
+        {
+            onCameraOnToggle.IsToggled = e.Value;
+        }
+
         async void OnDismissButtonClicked(object sender, EventArgs args)
         {
             if (Callback != null)
@@ -67,7 +82,12 @@ namespace CommunicationCallingXamarinSampleApp
                 dataModelInjection.localAvatar = localAvatarName;
                 dataModelInjection.remoteAvatar = remoteAvatarName;
 
-                Callback(localization, dataModelInjection, orientationProps);
+                CallControlProps callControlProps = new CallControlProps();
+                callControlProps.isSkipSetupON = skipSetupScreenToggle.IsToggled;
+                callControlProps.isMicrophoneON = onMicrophoneOnToggle.IsToggled;
+                callControlProps.isCameraON = onCameraOnToggle.IsToggled;
+
+                Callback(localization, dataModelInjection, orientationProps, callControlProps);
             }
 
             await Navigation.PopModalAsync(true);
@@ -185,5 +205,12 @@ namespace CommunicationCallingXamarinSampleApp
     {
         public string setupScreenOrientation;
         public string callScreenOrientation;
+    }
+
+    public struct CallControlProps
+    {
+        public Boolean isSkipSetupON;
+        public Boolean isMicrophoneON;
+        public Boolean isCameraON;
     }
 }

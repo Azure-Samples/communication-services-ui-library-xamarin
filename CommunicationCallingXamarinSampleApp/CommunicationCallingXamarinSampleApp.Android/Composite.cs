@@ -14,7 +14,7 @@ namespace CommunicationCallingXamarinSampleApp.Droid
 {
     public class Composite : IComposite
     {
-        public void joinCall(string name, string acsToken, string callID, bool isTeamsCall, LocalizationProps? localization, DataModelInjectionProps? dataModelInjection, OrientationProps orientationProps)
+        public void joinCall(string name, string acsToken, string callID, bool isTeamsCall, LocalizationProps? localization, DataModelInjectionProps? dataModelInjection, OrientationProps orientationProps, CallControlProps callControlProps)
         {
             CommunicationTokenCredential credentials = new CommunicationTokenCredential(acsToken);
 
@@ -34,6 +34,11 @@ namespace CommunicationCallingXamarinSampleApp.Droid
             callComposite.AddOnRemoteParticipantJoinedEventHandler(new RemoteParticipantJoinedHandler(callComposite, dataModelInjection));
             callComposite.AddOnCallStateChangedEventHandler(new CallStateChangedEventHandler());
             callComposite.AddOnDismissedEventHandler(new CallCompositeDismissedEventHandler());
+
+            CallCompositeLocalOptions localOptions = new CallCompositeLocalOptions()
+                .SetSkipSetupScreen(callControlProps.isSkipSetupON)
+                .SetCameraOn(callControlProps.isCameraON)
+                .SetMicrophoneOn(callControlProps.isMicrophoneON);
 
             CallCompositeParticipantViewData personaData = null;
 
@@ -59,14 +64,10 @@ namespace CommunicationCallingXamarinSampleApp.Droid
 
                 if (personaData != null)
                 {
-                    callComposite.Launch(MainActivity.Instance, remoteOptions, new CallCompositeLocalOptions(personaData));
-
+                    localOptions.SetParticipantViewData(personaData);
                 }
-                else
-                {
-                    callComposite.Launch(MainActivity.Instance, remoteOptions);
 
-                }
+                callComposite.Launch(MainActivity.Instance, remoteOptions, localOptions);
             }
             else
             {
@@ -77,15 +78,10 @@ namespace CommunicationCallingXamarinSampleApp.Droid
 
                 if (personaData != null)
                 {
-                    callComposite.Launch(MainActivity.Instance, remoteOptions, new CallCompositeLocalOptions(personaData));
-
-                }
-                else
-                {
-                    callComposite.Launch(MainActivity.Instance, remoteOptions);
-
+                    localOptions.SetParticipantViewData(personaData);
                 }
 
+                callComposite.Launch(MainActivity.Instance, remoteOptions, localOptions);
             }
 
             // to dismiss composite
