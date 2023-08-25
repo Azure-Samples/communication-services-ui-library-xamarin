@@ -5,15 +5,16 @@ namespace CommunicationCallingXamarinSampleApp
 {
     public partial class SettingsPage : ContentPage
     {
-        public delegate void ProcessSettingsCallback(LocalizationProps localization, DataModelInjectionProps dataModelInjection);
+        public delegate void ProcessSettingsCallback(LocalizationProps localization, DataModelInjectionProps dataModelInjection, OrientationProps orientationProps);
         public event ProcessSettingsCallback Callback;
 
         String localAvatarName = "";
         String remoteAvatarName = "";
         LocalizationProps _localizationProps;
         DataModelInjectionProps _dataModelInjectionProps;
+        OrientationProps _orientationProps;
 
-        public SettingsPage(IComposite callComposite, LocalizationProps localizationProps, DataModelInjectionProps dataModelInjectionProps)
+        public SettingsPage(IComposite callComposite, LocalizationProps localizationProps, DataModelInjectionProps dataModelInjectionProps, OrientationProps orientationProps)
         {
             InitializeComponent();
 
@@ -36,6 +37,11 @@ namespace CommunicationCallingXamarinSampleApp
             
             languagePicker.ItemsSource = callComposite.languages();
             languagePicker.SelectedItem = _localizationProps.locale;
+            callScreenOrientationPicker.ItemsSource = callComposite.orientations();
+            callScreenOrientationPicker.SelectedItem = _orientationProps.callScreenOrientation;
+            setupScreenOrientationPicker.ItemsSource = callComposite.orientations();
+            setupScreenOrientationPicker.SelectedItem = _orientationProps.setupScreenOrientation;
+
             SetLocalAvatarSelection(_dataModelInjectionProps.localAvatar);
             SetRemoteAvatarSelection(_dataModelInjectionProps.remoteAvatar);
         }
@@ -53,11 +59,15 @@ namespace CommunicationCallingXamarinSampleApp
                 localization.locale = languagePicker.SelectedItem.ToString();
                 localization.isLeftToRight = leftToRightToggle.IsToggled;
 
+                OrientationProps orientationProps = new OrientationProps();
+                orientationProps.setupScreenOrientation = setupScreenOrientationPicker.SelectedItem.ToString();
+                orientationProps.callScreenOrientation = callScreenOrientationPicker.SelectedItem.ToString();
+
                 DataModelInjectionProps dataModelInjection = new DataModelInjectionProps();
                 dataModelInjection.localAvatar = localAvatarName;
                 dataModelInjection.remoteAvatar = remoteAvatarName;
 
-                Callback(localization, dataModelInjection);
+                Callback(localization, dataModelInjection, orientationProps);
             }
 
             await Navigation.PopModalAsync(true);
@@ -169,5 +179,11 @@ namespace CommunicationCallingXamarinSampleApp
     {
         public string localAvatar;
         public string remoteAvatar;
+    }
+
+    public struct OrientationProps
+    {
+        public string setupScreenOrientation;
+        public string callScreenOrientation;
     }
 }
