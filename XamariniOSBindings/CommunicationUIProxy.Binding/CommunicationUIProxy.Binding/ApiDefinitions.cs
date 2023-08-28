@@ -52,6 +52,18 @@ namespace Xam.CommunicationUIProxy.iOS
 		[NullAllowed, Export ("setupScreenViewData", ArgumentSemantic.Strong)]
 		CommunicationSetupScreenViewDataProxy SetupScreenViewData { get; set; }
 
+		// @property (nonatomic) BOOL cameraOn;
+		[Export ("cameraOn")]
+        bool CameraOn { get; set; }
+
+		// @property (nonatomic) BOOL microphoneOn;
+		[Export ("microphoneOn")]
+        bool MicrophoneOn { get; set; }
+
+		// @property (nonatomic) BOOL skipSetupScreen;
+		[Export ("skipSetupScreen")]
+        bool SkipSetupScreen { get; set; }
+
 		// -(void)setLocalDataOptionProperties:(CommunicationPersonaDataProxy * _Nullable)personaData setupScreenViewData:(CommunicationSetupScreenViewDataProxy * _Nullable)setupScreenViewData;
 		[Export ("setLocalDataOptionProperties:setupScreenViewData:")]
 		void SetLocalDataOptionProperties ([NullAllowed] CommunicationPersonaDataProxy personaData, [NullAllowed] CommunicationSetupScreenViewDataProxy setupScreenViewData);

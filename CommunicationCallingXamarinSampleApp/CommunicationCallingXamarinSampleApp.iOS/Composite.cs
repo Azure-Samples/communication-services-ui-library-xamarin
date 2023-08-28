@@ -22,6 +22,10 @@ namespace CommunicationCallingXamarinSampleApp.iOS
                 localizationProxy.IsLeftToRight = localization.Value.isLeftToRight;
             }
             CommunicationLocalDataOptionProxy localDataOption = new CommunicationLocalDataOptionProxy();
+            localDataOption.SkipSetupScreen = callControlProps.isSkipSetupON;
+            localDataOption.CameraOn = callControlProps.isCameraON;
+            localDataOption.MicrophoneOn = callControlProps.isMicrophoneON;
+
             CommunicationScreenOrientationProxy orientationOption = new CommunicationScreenOrientationProxy();
             orientationOption.SetupScreenOrientation = orientationProps.setupScreenOrientation;
             orientationOption.CallScreenOrientation = orientationProps.callScreenOrientation;

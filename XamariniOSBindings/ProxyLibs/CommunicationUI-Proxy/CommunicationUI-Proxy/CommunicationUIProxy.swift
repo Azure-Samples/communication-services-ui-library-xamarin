@@ -56,6 +56,9 @@ public class CommunicationSetupScreenViewDataProxy: NSObject {
 public class CommunicationLocalDataOptionProxy: NSObject {
     public var personaData: CommunicationPersonaDataProxy? = nil
     public var setupScreenViewData: CommunicationSetupScreenViewDataProxy? = nil
+    public var skipSetupScreen: Bool = false
+    public var microphoneOn: Bool = false
+    public var cameraOn: Bool = false
 
     public func setLocalDataOptionProperties(_ personaData: CommunicationPersonaDataProxy? = nil,
                                              setupScreenViewData: CommunicationSetupScreenViewDataProxy? = nil) {
@@ -341,7 +344,10 @@ extension CommunicationUIProxy {
         let setupViewData: SetupScreenViewData = SetupScreenViewData(title: title, subtitle: subtitle)
         
         return LocalOptions(participantViewData: persona,
-                            setupScreenViewData: setupViewData)
+                            setupScreenViewData: setupViewData,
+                            cameraOn: localDataOptionsProxy.cameraOn,
+                            microphoneOn: localDataOptionsProxy.microphoneOn,
+                            skipSetupScreen: localDataOptionsProxy.skipSetupScreen)
     }
 
     private func getOrientation(orientation: String) -> OrientationOptions {
