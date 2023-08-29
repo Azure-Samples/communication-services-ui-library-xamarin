@@ -208,11 +208,11 @@ namespace CommunicationCallingXamarinSampleApp.Droid
 
             public void Handle(Java.Lang.Object eventArgs)
             {
-                //if (eventArgs is CallCompositeCallStateEvent)
-                //{
-                //    var callState = eventArgs as CallCompositeCallStateEvent;
-                //    Console.WriteLine(callState.Code.ToString());
-                //}
+                if (eventArgs is CallCompositeCallStateChangedEvent)
+                {
+                    var callState = eventArgs as CallCompositeCallStateChangedEvent;
+                    Console.WriteLine(callState.Code.ToString());
+                }
             }
 
             public void SetJniIdentityHashCode(int value)
