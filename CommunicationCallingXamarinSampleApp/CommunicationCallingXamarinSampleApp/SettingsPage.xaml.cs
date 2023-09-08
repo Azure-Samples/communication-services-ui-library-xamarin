@@ -5,15 +5,16 @@ namespace CommunicationCallingXamarinSampleApp
 {
     public partial class SettingsPage : ContentPage
     {
-        public delegate void ProcessSettingsCallback(LocalizationProps localization, DataModelInjectionProps dataModelInjection);
+        public delegate void ProcessSettingsCallback(LocalizationProps localization, DataModelInjectionProps dataModelInjection, OrientationProps orientationProps, CallControlProps callControlProps);
         public event ProcessSettingsCallback Callback;
 
         String localAvatarName = "";
         String remoteAvatarName = "";
         LocalizationProps _localizationProps;
         DataModelInjectionProps _dataModelInjectionProps;
+        OrientationProps _orientationProps;
 
-        public SettingsPage(IComposite callComposite, LocalizationProps localizationProps, DataModelInjectionProps dataModelInjectionProps)
+        public SettingsPage(IComposite callComposite, LocalizationProps localizationProps, DataModelInjectionProps dataModelInjectionProps, OrientationProps orientationProps)
         {
             InitializeComponent();
 
@@ -36,6 +37,11 @@ namespace CommunicationCallingXamarinSampleApp
             
             languagePicker.ItemsSource = callComposite.languages();
             languagePicker.SelectedItem = _localizationProps.locale;
+            callScreenOrientationPicker.ItemsSource = callComposite.orientations();
+            callScreenOrientationPicker.SelectedItem = _orientationProps.callScreenOrientation;
+            setupScreenOrientationPicker.ItemsSource = callComposite.orientations();
+            setupScreenOrientationPicker.SelectedItem = _orientationProps.setupScreenOrientation;
+
             SetLocalAvatarSelection(_dataModelInjectionProps.localAvatar);
             SetRemoteAvatarSelection(_dataModelInjectionProps.remoteAvatar);
         }
@@ -43,6 +49,21 @@ namespace CommunicationCallingXamarinSampleApp
         void OnLeftToRightToggled(object sender, ToggledEventArgs e)
         {
             leftToRightToggle.IsToggled = e.Value;
+        }
+
+        void OnSkipSetupToggled(object sender, ToggledEventArgs e)
+        {
+            skipSetupScreenToggle.IsToggled = e.Value;
+        }
+
+        void OnMicOnToggled(object sender, ToggledEventArgs e)
+        {
+            onMicrophoneOnToggle.IsToggled = e.Value;
+        }
+
+        void OnCameraOnToggled(object sender, ToggledEventArgs e)
+        {
+            onCameraOnToggle.IsToggled = e.Value;
         }
 
         async void OnDismissButtonClicked(object sender, EventArgs args)
@@ -53,11 +74,20 @@ namespace CommunicationCallingXamarinSampleApp
                 localization.locale = languagePicker.SelectedItem.ToString();
                 localization.isLeftToRight = leftToRightToggle.IsToggled;
 
+                OrientationProps orientationProps = new OrientationProps();
+                orientationProps.setupScreenOrientation = setupScreenOrientationPicker.SelectedItem.ToString();
+                orientationProps.callScreenOrientation = callScreenOrientationPicker.SelectedItem.ToString();
+
                 DataModelInjectionProps dataModelInjection = new DataModelInjectionProps();
                 dataModelInjection.localAvatar = localAvatarName;
                 dataModelInjection.remoteAvatar = remoteAvatarName;
 
-                Callback(localization, dataModelInjection);
+                CallControlProps callControlProps = new CallControlProps();
+                callControlProps.isSkipSetupON = skipSetupScreenToggle.IsToggled;
+                callControlProps.isMicrophoneON = onMicrophoneOnToggle.IsToggled;
+                callControlProps.isCameraON = onCameraOnToggle.IsToggled;
+
+                Callback(localization, dataModelInjection, orientationProps, callControlProps);
             }
 
             await Navigation.PopModalAsync(true);
@@ -169,5 +199,18 @@ namespace CommunicationCallingXamarinSampleApp
     {
         public string localAvatar;
         public string remoteAvatar;
+    }
+
+    public struct OrientationProps
+    {
+        public string setupScreenOrientation;
+        public string callScreenOrientation;
+    }
+
+    public struct CallControlProps
+    {
+        public Boolean isSkipSetupON;
+        public Boolean isMicrophoneON;
+        public Boolean isCameraON;
     }
 }
