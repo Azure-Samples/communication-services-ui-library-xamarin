@@ -16,6 +16,10 @@
                 <Switch x:Name="leftToRightToggle" IsToggled="true" Margin="16, 0" Toggled="OnLeftToRightToggled"/>
                 <Label Text="Language" FontSize="12" HorizontalTextAlignment="Start" Margin="16, 24, 16, 8" TextColor="#6E6E6E"/>
                 <Picker x:Name="languagePicker" Title="Select a language" TextColor="#6E6E6E"/>
+                <Label Text="CallScreenOrientation" FontSize="12" HorizontalTextAlignment="Start" Margin="16, 24, 16, 8" TextColor="#6E6E6E"/>
+                <Picker x:Name="callScreenOrientationPicker" Title="Select orientation for CallScreen" TextColor="#6E6E6E"/>
+                <Label Text="SetupScreenOrientation" FontSize="12" HorizontalTextAlignment="Start" Margin="16, 24, 16, 8" TextColor="#6E6E6E"/>
+                <Picker x:Name="setupScreenOrientationPicker" Title="Select orientation for SetupScreen" TextColor="#6E6E6E"/>
                 <Label Text="Data Model Injection" FontSize="13" HorizontalTextAlignment="Start" Margin="16, 28, 16, 8" TextColor="#6E6E6E"/>
                 <Label Text="Local Avatar" FontSize="13" HorizontalTextAlignment="Start" Margin="16, 8" TextColor="#6E6E6E"/>
                 <StackLayout Margin="20" Orientation="Horizontal" HorizontalOptions="Center">
@@ -35,6 +39,12 @@
                     <ImageButton x:Name="remoteMouseBtn" Source="mouse" WidthRequest="{OnPlatform iOS=40, Android=40}" HorizontalOptions="Center" Clicked="OnRemoteMouseAvatarClicked"/>
                     <ImageButton x:Name="remoteOctopusBtn" Source="octopus" WidthRequest="{OnPlatform iOS=40, Android=40}" HorizontalOptions="Center" Clicked="OnRemoteOctopusAvatarClicked"/>
                 </StackLayout>
+                <Label Text="Skip Setup Screen Config" FontSize="12" HorizontalTextAlignment="Start" Margin="16, 8" TextColor="#6E6E6E"/>
+                <Switch x:Name="skipSetupScreenToggle" IsToggled="false" Margin="16, 0" Toggled="OnSkipSetupToggled"/>
+                <Label Text="On Microphone On By Default" FontSize="12" HorizontalTextAlignment="Start" Margin="16, 8" TextColor="#6E6E6E"/>
+                <Switch x:Name="onMicrophoneOnToggle" IsToggled="false" Margin="16, 0" Toggled="OnMicOnToggled"/>
+                <Label Text="On Camera On By Default" FontSize="12" HorizontalTextAlignment="Start" Margin="16, 8" TextColor="#6E6E6E"/>
+                <Switch x:Name="onCameraOnToggle" IsToggled="false" Margin="16, 0" Toggled="OnCameraOnToggled"/>
                 <Button x:Name="dismissBtn" Text="Close" Margin="16, 0, 16, 0" Clicked="OnDismissButtonClicked"></Button>
             </StackLayout>
         </ScrollView>
