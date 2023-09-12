@@ -52,7 +52,7 @@ namespace CommunicationCallingXamarinSampleApp.iOS
                 errorCallback: null, 
                 onRemoteParticipantJoinedCallback: null,
                 (callstate) => onCallStateChanged(callstate),
-                (exited) => onExited(exited));
+                (dismissed) => onDismissed(dismissed));
             }
             else
             {
@@ -67,13 +67,13 @@ namespace CommunicationCallingXamarinSampleApp.iOS
                     (error) => handleError(error),
                     (rawIds) => onRemoteParticipant(rawIds),
                     (callstate) => onCallStateChanged(callstate),
-                    (exited)=> onExited(exited));
+                    (dismissed) => onDismissed(dismissed));
             }
         }
 
-        private void onExited(CommunicationExitProxy exited)
+        private void onDismissed(CommunicationDismissedProxy dismissed)
         {
-            Console.WriteLine("onExited " + exited.Code);
+            Console.WriteLine("onDismissed " + dismissed.ErrorCode);
         }
 
         private void onCallStateChanged(CommunicationCallStateProxy callstate)
